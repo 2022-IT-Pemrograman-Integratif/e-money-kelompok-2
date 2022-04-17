@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use Codeigniter\API\ResponseTrait;
+use Exception;
 
 class ModelAccount extends Model
 {
+    use ResponseTrait;
     protected $table = "account";
     protected $primaryKey = "account_id";
     protected $allowedFields = [
@@ -34,10 +37,25 @@ class ModelAccount extends Model
         'account_pin'       => [
             'required'  => 'Silahkan masukkan PIN',
             'is_unique' => 'PIN tersebut sudah ada'
+        ],
+        'nomer_hp'       => [
+            'required'  => 'Silahkan masukkan nomer hp',
+            'is_unique' => 'nomer hp tersebut sudah terdaftar'
         ]
     ];
 
-    
+    function verifyLogin($username, $password)
+    {
+        $builder = $this->table('account');
+        $builder->where('account_username', $username);
+        $builder->where('account_password', $password);
+        $data = $builder->first();
+        if(empty($data)){
+            return "username / password salah";
+        }
+        return $data;
+
+    }
 }
 
 ?>

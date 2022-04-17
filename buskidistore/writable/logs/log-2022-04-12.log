@@ -1,0 +1,107 @@
+CRITICAL - 2022-04-12 03:50:04 --> CodeIgniter\Validation\Rules::is_unique(): Argument #1 ($str) must be of type ?string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php on line 292
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique(Array, 'account.account...', Array, NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('account_usernam...', 'account_usernam...', Array, Array, Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(29): CodeIgniter\BaseModel->save(Array)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->register()
+#8 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#9 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-12 03:50:53 --> CodeIgniter\Validation\Rules::is_unique(): Argument #1 ($str) must be of type ?string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php on line 292
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique(Array, 'account.account...', Array, NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('account_usernam...', 'account_usernam...', Array, Array, Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(29): CodeIgniter\BaseModel->save(Array)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->register()
+#8 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#9 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-12 03:51:01 --> CodeIgniter\Validation\Rules::is_unique(): Argument #1 ($str) must be of type ?string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php on line 292
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique(Array, 'account.account...', Array, NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('account_usernam...', 'account_usernam...', Array, Array, Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(29): CodeIgniter\BaseModel->save(Array)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->register()
+#8 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#9 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-12 03:51:34 --> Object of class stdClass could not be converted to string
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->register()
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-12 03:51:44 --> Object of class stdClass could not be converted to string
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->register()
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-12 03:55:26 --> json_decode(): Argument #1 ($json) must be of type string, stdClass given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(25): json_decode(Object(stdClass))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->register()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 03:55:53 --> syntax error, unexpected token "return"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 03:57:50 --> syntax error, unexpected token "return"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 03:58:20 --> syntax error, unexpected variable "$response"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 04:05:02 --> syntax error, unexpected variable "$response"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 04:05:10 --> syntax error, unexpected variable "$response"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 04:06:06 --> syntax error, unexpected variable "$response"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-12 04:07:08 --> syntax error, unexpected variable "$response"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -24,9 +24,9 @@ class admin extends BaseController
         $data = $this->modelAccount->orderBy('account_id', 'asc')->findAll();
         return $this->respond($data, 200);
     }
-    public function FunctionName(Type $var = null)
+    public function login()
     {
-        # code...
+        
     }
 }
 ?>
