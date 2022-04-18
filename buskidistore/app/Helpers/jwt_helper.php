@@ -2,14 +2,21 @@
 
 use App\Models\ModelAccount;
 use Firebase\JWT\JWT;
+Use Firebase\JWT\Key;
 
 function getJWT($token)
 {
     if(is_null($token))
     {
-        throw new Exception("Tidak ada token");
+        return "Tidak ada token";
     }
-    return explode(" ", $token)[1];
+    try{
+        $JWT = JWT::decode(explode(" ", $token)[1], new key (getenv("JWT_SECRET_KEY"),'HS256'));
+    }catch(Exception $e){
+        return $e->getMessage();
+    }
+    // throw new Exception("Tidak ada token");
+    return 1;
 }
 
 function createJWT($data)
@@ -28,4 +35,9 @@ function createJWT($data)
     return $JWT;
 }
 
+function getJWTdata($token){
+    $JWT = JWT::decode(explode(" ", $token)[1], new key (getenv("JWT_SECRET_KEY"),'HS256'));
+    return (array)$JWT;
+}
+    
 ?>

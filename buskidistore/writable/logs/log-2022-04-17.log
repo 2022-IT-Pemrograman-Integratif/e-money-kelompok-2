@@ -1,0 +1,395 @@
+CRITICAL - 2022-04-17 01:39:45 --> Undefined variable $request
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\XAMPP\\htdocs...', 100)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 01:41:56 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x02\xEBa\xA2\xB8\xB3j\xD8\xA8\x9C\x17\x9A\xAD\xEA\xDE...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('Authorization: ...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata(Object(CodeIgniter\HTTP\Header))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:41:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-17 01:42:53 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:42:53 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-17 01:43:09 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:43:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-17 01:43:32 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:43:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-17 01:43:44 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:43:44 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-17 01:44:03 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:44:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-17 01:44:18 --> Undefined variable $data
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\XAMPP\\htdocs...', 108)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 01:46:38 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:47:04 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:47:33 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:49:39 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:51:03 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:51:56 --> syntax error, unexpected token "}"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskidicoin/pub...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskidicoin/pub...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 01:52:58 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(100): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 01:54:08 --> Class "App\Controllers\Buskidicoin\JWT" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-17 01:54:25 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:54:40 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:54:53 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:55:32 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:56:12 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:57:09 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:58:02 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:58:22 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php on line 103
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode(Array, 'cobacoba', 'HS256')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 01:58:32 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:59:00 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php on line 103
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode(Array, 'cobacoba', 'HS256')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 01:59:05 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'HS256')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 01:59:17 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba', Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 02:00:33 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php on line 103
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode(Array, 'cobacoba', Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 02:01:58 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php on line 103
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode(Array, 'cobacoba')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 02:02:07 --> foreach() argument must be of type array|object, string given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'F:\\XAMPP\\htdocs...', 422)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey('cobacoba', NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'cobacoba')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-17 02:05:29 --> $keyOrKeyArray must be an instance of Firebase\JWT\Key key or an array of Firebase\JWT\Key keys
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(125): Firebase\JWT\JWT::getKey(Array, NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(103): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-17 02:08:21 --> Class "key" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 02:09:52 --> Cannot use object of type stdClass as array
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-17 02:10:31 --> Undefined array key "account_role"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 107)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 02:11:55 --> Undefined array key "account_role"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 107)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 02:11:58 --> Undefined array key "account_role"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 107)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 02:12:36 --> Undefined array key "account_role"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 111)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 02:13:01 --> Cannot use object of type stdClass as array
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('4')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

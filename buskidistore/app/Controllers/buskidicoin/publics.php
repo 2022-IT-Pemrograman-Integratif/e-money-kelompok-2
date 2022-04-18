@@ -5,6 +5,8 @@ namespace App\Controllers\Buskidicoin;
 use App\Controllers\BaseController;
 use Codeigniter\API\ResponseTrait;
 use App\Models\ModelAccount;
+use Firebase\JWT\JWT;
+Use Firebase\JWT\Key;
 
 class publics extends BaseController
 {
@@ -91,11 +93,25 @@ class publics extends BaseController
                 'token'     => createJWT($data_full)
             ]
         ];
-        return $this->respond($response);;
+        return $this->respond($response);
     }
 
     public function getData($id)
     {
+        helper('jwt');
+        $data = getJWTdata($this->request->getHeader("Authorization")->getValue());
+        $full_data = (array)$data['data'];
         
+        if($full_data['account_id'] != $id)
+        {
+            return $this->fail("You cannot see this id");
+        }
+        $response = [
+            'status'    => 201,
+            'message'   => [
+                'data'      => $full_data
+            ]
+        ];
+        return $this->respond($response);
     }
 }
