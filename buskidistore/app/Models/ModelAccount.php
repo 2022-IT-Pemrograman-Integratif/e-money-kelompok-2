@@ -56,13 +56,13 @@ class ModelAccount extends Model
         return $data;
     }
 
-    function getDataWhereId($id)
+    function getDataWhere($where, $whering)
     {
         $builder = $this->table('account');
-        $builder->where('account_id', $id);
+        $builder->where($where, $whering);
         $data = $builder->first();
         if(empty($data)){
-            return "id tidak ada";
+            return "data tidak ada";
         }
         return $data;
     }

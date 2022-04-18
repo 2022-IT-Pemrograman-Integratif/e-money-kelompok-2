@@ -702,3 +702,17 @@ CRITICAL - 2022-04-18 10:30:56 --> Undefined array key "account_role"
 #3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-04-18 12:11:12 --> Trying to access array offset on value of type bool
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'F:\\XAMPP\\htdocs...', 263)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->transfer()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 12:11:27 --> Trying to access array offset on value of type bool
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'F:\\XAMPP\\htdocs...', 263)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->transfer()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
