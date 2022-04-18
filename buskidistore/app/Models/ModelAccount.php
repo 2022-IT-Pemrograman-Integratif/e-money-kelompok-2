@@ -54,7 +54,24 @@ class ModelAccount extends Model
             return "username / password salah";
         }
         return $data;
+    }
 
+    function getDataWhereId($id)
+    {
+        $builder = $this->table('account');
+        $builder->where('account_id', $id);
+        $data = $builder->first();
+        if(empty($data)){
+            return "id tidak ada";
+        }
+        return $data;
+    }
+    function updateData($where, $whering, $set, $seting)
+    {
+        $builder = $this->table('account');
+        $builder->set($set, $seting);
+        $builder->where($where, $whering);
+        $builder->update();
     }
 }
 

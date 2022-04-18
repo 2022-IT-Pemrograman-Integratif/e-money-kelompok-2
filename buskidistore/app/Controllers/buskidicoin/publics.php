@@ -15,6 +15,7 @@ class publics extends BaseController
     function __construct()
     {
         $this->modelAccount = new ModelAccount();
+        helper('jwt');
     }
 
     public function index()
@@ -102,14 +103,62 @@ class publics extends BaseController
         $data = getJWTdata($this->request->getHeader("Authorization")->getValue());
         $full_data = (array)$data['data'];
         
-        if($full_data['account_id'] != $id)
+        if($full_data['account_id'] != $id && !$full_data['account_role'])
         {
             return $this->fail("You cannot see this id");
         }
         $response = [
             'status'    => 201,
             'message'   => [
-                'data'      => $full_data
+                'data'      => $this->modelAccount->getDataWhereId($id)
+            ]
+        ];
+        return $this->respond($response);
+    }
+    public function topup()
+    {
+        helper('jwt');
+        $data = getJWTdata($this->request->getHeader("Authorization")->getValue());
+        $full_data = (array)$data['data'];
+
+        $rules = [
+            "nomer_hp" => [
+                'label'     => 'nomer_hp',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan nomer hp'
+                ]
+            ],
+            "amount" => [
+                'label'     => 'amount',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan jumlah topup'
+                ]
+            ],
+        ];
+        if (!$this->validate($rules)) {
+            $validation = \Config\Services::validation();
+            return $this->fail($validation->getErrors());
+        }
+
+        $data = [
+            'nomer_hp'  => $this->request->getPost('nomer_hp'),
+            'amount'    => $this->request->getPost('amount')
+        ];
+
+        if($full_data['nomer_hp'] != $data['nomer_hp'] && !$full_data['account_role'])
+        {
+            return $this->fail("Topup gagal");
+        }
+
+        $data_new = $this->modelAccount->getDataWhereId($full_data['account_id']);
+        $this->modelAccount->updateData("nomer_hp", $full_data['nomer_hp'], "account_money", $data_new['account_money'] + $data['amount']);
+
+        $response = [
+            'status'    => 201,
+            'message'   => [
+                'success'      => "topup berhasil"
             ]
         ];
         return $this->respond($response);
