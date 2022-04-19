@@ -1,0 +1,28 @@
+ERROR - 2022-04-19 03:16:17 --> Error connecting to the database: Unknown database 'pemrograman_integratif'
+CRITICAL - 2022-04-19 03:16:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pemrograman_integratif'
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\app\Models\ModelAccount.php(54): CodeIgniter\BaseModel->first()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\app\Controllers\buskidicoin\publics.php(86): App\Models\ModelAccount->verifyLogin('coba', 'coba')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#8 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-04-19 03:18:01 --> Error connecting to the database: Unknown database 'pemrograman_integratif'
+CRITICAL - 2022-04-19 03:18:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pemrograman_integratif'
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\app\Models\ModelAccount.php(54): CodeIgniter\BaseModel->first()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\app\Controllers\buskidicoin\publics.php(86): App\Models\ModelAccount->verifyLogin('coba', 'coba')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#8 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

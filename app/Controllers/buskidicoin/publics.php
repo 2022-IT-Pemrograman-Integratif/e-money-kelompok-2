@@ -24,6 +24,10 @@ class publics extends BaseController
     }
     public function register()
     {
+        if($this->request->getMethod() != "post")
+        {
+            return $this->fail("This endpoint only accept post");
+        }
         /*if($this->request->getPost()){
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
@@ -52,7 +56,11 @@ class publics extends BaseController
         return $this->respond($response);
     }
     public function login()
-    {
+    {   
+        if($this->request->getMethod() != "post")
+        {
+            return $this->fail("This endpoint only accept post");
+        }
         $rules = [
             "username" => [
                 'label'     => 'username',
@@ -101,6 +109,10 @@ class publics extends BaseController
         if (is_null($id)) {
             return $this->fail("parameter kurang");
         }
+        if($this->request->getMethod() != "get")
+        {
+            return $this->fail("This endpoint only accept get");
+        }
         helper('jwt');
         $data = getJWTdata($this->request->getHeader("Authorization")->getValue());
         $full_data = (array)$data['data'];
@@ -118,6 +130,11 @@ class publics extends BaseController
     }
     public function topup()
     {
+        if($this->request->getMethod() != "post")
+        {
+            return $this->fail("This endpoint only accept post");
+        }
+
         helper('jwt');
         $data = getJWTdata($this->request->getHeader("Authorization")->getValue());
         $full_data = (array)$data['data'];
@@ -172,6 +189,11 @@ class publics extends BaseController
     }
     public function transfer()
     {
+        if($this->request->getMethod() != "post")
+        {
+            return $this->fail("This endpoint only accept post");
+        }
+        
         helper('jwt');
         $data = getJWTdata($this->request->getHeader("Authorization")->getValue());
         $full_data = (array)$data['data'];
