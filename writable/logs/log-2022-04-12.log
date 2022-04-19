@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-04-12 03:50:04 --> CodeIgniter\Validation\Rules::is_unique(): Argument #1 ($str) must be of type ?string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php on line 292
 #0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique(Array, 'account.account...', Array, NULL)
 #1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('account_usernam...', 'account_usernam...', Array, Array, Array)
@@ -105,3 +106,73 @@ CRITICAL - 2022-04-12 04:07:08 --> syntax error, unexpected variable "$response"
 #3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+=======
+CRITICAL - 2022-04-12 07:46:12 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:46:47 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:30 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:31 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:31 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:31 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:31 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:32 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:32 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:32 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:32 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:32 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:33 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:33 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:34 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:34 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-04-12 07:52:34 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\e-money-kelompok-2\buskidistore\public\index.php(28): require('C:\\xampp\\htdocs...')
+#2 {main}
+>>>>>>> 4b3958201440feda40bb1223ce44e6472b121f0f
