@@ -1,0 +1,177 @@
+CRITICAL - 2022-04-16 05:08:50 --> sizeof(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(51): sizeof(Object(CodeIgniter\Database\MySQLi\Result))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-16 05:09:12 --> Class "App\Models\exception" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 05:09:26 --> Class "App\Models\Exception" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 05:12:50 --> username / password salah
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 05:14:10 --> username / password salah
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 05:14:58 --> Call to undefined method App\Models\ModelAccount::fail
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(55): CodeIgniter\Model->__call('fail', Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-16 05:15:21 --> Call to undefined method App\Models\ModelAccount::fail
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(56): CodeIgniter\Model->__call('fail', Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-16 05:15:30 --> Call to a member function setContentType() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Models\ModelAccount->format(Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(136): App\Models\ModelAccount->respond(Array, 400, '')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(57): App\Models\ModelAccount->fail(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-16 05:16:12 --> Call to a member function setContentType() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Models\ModelAccount->format(Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(136): App\Models\ModelAccount->respond(Array, 400, '')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(57): App\Models\ModelAccount->fail(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-16 05:16:25 --> Call to a member function setContentType() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Models\ModelAccount->format(Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(136): App\Models\ModelAccount->respond(Array, 400, '')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(57): App\Models\ModelAccount->fail(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-16 05:16:42 --> Call to a member function setContentType() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Models\ModelAccount->format(Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(136): App\Models\ModelAccount->respond(Array, 400, '')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(57): App\Models\ModelAccount->fail(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-16 05:19:30 --> Call to a member function setContentType() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Models\ModelAccount->format(Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(136): App\Models\ModelAccount->respond(Array, 400, '')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(57): App\Models\ModelAccount->fail(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-16 05:19:38 --> Call to a member function setContentType() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Models\ModelAccount->format(Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(136): App\Models\ModelAccount->respond(Array, 400, '')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(57): App\Models\ModelAccount->fail(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-16 05:19:59 --> Call to a member function setContentType() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Models\ModelAccount->format(Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(136): App\Models\ModelAccount->respond(Array, 400, '')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(57): App\Models\ModelAccount->fail(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-16 05:25:53 --> sizeof(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Models\ModelAccount.php(60): sizeof(Object(CodeIgniter\Database\MySQLi\Result))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-16 05:26:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(80): App\Models\ModelAccount->verifyLogin('asd', 'asd')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 05:29:51 --> Call to undefined function App\Controllers\Buskidicoin\createJWT()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-16 07:55:06 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php on line 27 and at least 3 expected
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(27): Firebase\JWT\JWT::encode(Array, 'cobacoba')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(92): createJWT(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-16 07:55:19 --> Firebase\JWT\JWT::encode(): Argument #3 ($alg) must be of type string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php on line 27
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(27): Firebase\JWT\JWT::encode(Array, 'cobacoba', Array)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(92): createJWT(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-16 07:55:27 --> Algorithm not supported
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(197): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'sha256')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(27): Firebase\JWT\JWT::encode(Array, 'cobacoba', 'sha256')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(92): createJWT(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-16 07:55:49 --> Algorithm not supported
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(197): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1Q...', 'cobacoba', 'SHA256')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(27): Firebase\JWT\JWT::encode(Array, 'cobacoba', 'SHA256')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(92): createJWT(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

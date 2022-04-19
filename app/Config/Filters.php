@@ -8,6 +8,9 @@ use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
+use App\Filters\filter_jwt;
+use App\Filters\filter_jwtadmin;
+
 
 class Filters extends BaseConfig
 {
@@ -23,6 +26,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'filter_jwt'    => filter_jwt::class,
+        'filter_jwtadmin'   => filter_jwtadmin::class
     ];
 
     /**
@@ -64,5 +69,19 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'filter_jwt'    => [
+            'before'    => [
+                'buskidicoin/publics/getData/*',
+                'buskidicoin/publics/topup',
+                'buskidicoin/publics/transfer',
+                'buskidicoin/admin/*'
+            ]
+        ],
+        'filter_jwtadmin'   => [
+            'before'    => [
+                'buskidicoin/admin/*'
+            ]
+        ]
+    ];
 }
