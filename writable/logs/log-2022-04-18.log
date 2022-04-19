@@ -1,0 +1,780 @@
+CRITICAL - 2022-04-18 04:11:17 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(33): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:13:11 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:15:31 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:16:01 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:20:40 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:20:58 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:21:26 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:21:52 --> Call to a member function getValue() on null
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:21:56 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:22:36 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:23:23 --> Class "Config\authfilter" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-18 04:23:28 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:23:33 --> Class "Config\authfilter" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-18 04:23:37 --> Class "Config\authfilter" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-18 04:23:54 --> Class "Config\authfilter" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-18 04:24:04 --> Class "Config\authfilter" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-18 04:24:35 --> Class "Config\filter_jwt" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-18 04:26:21 --> Call to undefined function App\Filters\validateJWT()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:27:05 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 25)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:27:31 --> Trait "App\Filters\ResponseTrait" not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:27:45 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 28)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:29:45 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 28)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:29:46 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 28)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:30:26 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(28): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:30:37 --> Call to undefined method App\Filters\filter_jwt::respond()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:30:52 --> Call to undefined method App\Filters\filter_jwt::respond()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:30:53 --> Call to undefined method App\Filters\filter_jwt::respond()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:30:57 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(28): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:30:58 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(28): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:31:21 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(28): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:31:42 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:34:10 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'F:\\XAMPP\\htdocs...', 439)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\HTTP\ResponseTrait.php(439): str_replace(Array, '', Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(398): CodeIgniter\HTTP\Response->send()
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:34:17 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(31): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:36:10 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(32): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:36:25 --> Call to undefined method App\Filters\filter_jwt::respond()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:36:26 --> Call to undefined method App\Filters\filter_jwt::respond()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:36:27 --> Call to undefined method App\Filters\filter_jwt::respond()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 04:36:34 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(32): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:36:41 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 327)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): App\Filters\filter_jwt->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(32): App\Filters\filter_jwt->respond(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-18 04:36:57 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 32)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:37:05 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 30)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:37:06 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 30)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:37:07 --> Undefined property: App\Filters\filter_jwt::$response
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 30)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:41:16 --> Too few arguments to function CodeIgniter\HTTP\Response::setJSON(), 0 passed in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php on line 32 and at least 1 expected
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(32): CodeIgniter\HTTP\Response->setJSON()
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 04:44:08 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:44:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:44:48 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:44:48 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:45:15 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:45:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:45:29 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:45:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:45:37 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:45:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:45:45 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:46:02 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(30): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:46:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:46:12 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(16): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:46:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:46:20 --> Unexpected control character found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(337): Firebase\JWT\JWT::handleJsonError(3)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\vendor\firebase\php-jwt\src\JWT.php(107): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(16): getJWTdata('Bearer eyJ0eXAi...')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#6 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-18 04:46:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-18 04:47:22 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, array given, called in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php on line 37
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode(Array, Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(31): getJWTdata(Array)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:47:47 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(31): getJWTdata('eyJ0eXAiOiJKV1Q...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 04:48:33 --> Class "App\Filters\JWT" not found
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 08:08:45 --> syntax error, unexpected token "}"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\XAMPP\\htdocs...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\fil...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\fil...')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 08:09:19 --> syntax error, unexpected token "}"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\XAMPP\\htdocs...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\fil...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\fil...')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 08:09:27 --> syntax error, unexpected token "}"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\XAMPP\\htdocs...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\fil...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\fil...')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 08:10:36 --> syntax error, unexpected token "}"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\XAMPP\\htdocs...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\fil...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\fil...')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 08:10:57 --> Token sudah expired
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:12:43 --> Token sudah expired
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:13:27 --> Token sudah expired
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:13:38 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:14:00 --> Token sudah expired
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:15:49 --> Token sudah expired
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:17:52 --> Token sudah expired
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:20:53 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT(NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:25:43 --> Token sudah expired
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:28:18 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(42): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('Bearer eyJ0eXAi...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 08:45:15 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(42): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('Bearer eyJ0eXAi...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 08:45:49 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:45:56 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:46:03 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:50:47 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:52:09 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:52:26 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:56:46 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Helpers\jwt_helper.php(42): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(102): getJWTdata('Bearer eyJ0eXAi...')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData('2')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 08:56:57 --> Tidak ada token
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(18): getJWT('Bearer eyJ0eXAi...')
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 08:59:50 --> Undefined variable $e
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwt.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\XAMPP\\htdocs...', 21)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/pub...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 10:29:53 --> Too few arguments to function App\Controllers\Buskidicoin\publics::getData(), 0 passed in F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData()
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 10:30:04 --> Call to undefined function App\Filters\getData()
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwtadmin->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/adm...', 'before')
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 10:30:56 --> Undefined array key "account_role"
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Filters\filter_jwtadmin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 19)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\Filters\Filters.php(173): App\Filters\filter_jwtadmin->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('buskidicoin/adm...', 'before')
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 12:11:12 --> Trying to access array offset on value of type bool
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'F:\\XAMPP\\htdocs...', 263)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->transfer()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-18 12:11:27 --> Trying to access array offset on value of type bool
+#0 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\app\Controllers\buskidicoin\publics.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'F:\\XAMPP\\htdocs...', 263)
+#1 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->transfer()
+#2 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#3 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\e-money-kelompok-2\buskidistore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-18 19:48:08 --> Error connecting to the database: Unknown database 'pi_buskidicoin_new'
+CRITICAL - 2022-04-18 19:48:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pi_buskidicoin_new'
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\app\Models\ModelAccount.php(52): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\app\Controllers\buskidicoin\publics.php(83): App\Models\ModelAccount->verifyLogin('coba', 'coba')
+#6 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->login()
+#7 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#8 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-18 19:56:37 --> Object of class App\Models\ModelAccount could not be converted to string
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->register()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 20:10:32 --> Too few arguments to function App\Controllers\Buskidicoin\publics::getData(), 0 passed in C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 20:12:52 --> Too few arguments to function App\Controllers\Buskidicoin\publics::getData(), 0 passed in C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 20:12:56 --> Too few arguments to function App\Controllers\Buskidicoin\publics::getData(), 0 passed in C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 20:15:36 --> Too few arguments to function App\Controllers\Buskidicoin\publics::getData(), 0 passed in C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->getData()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 20:25:12 --> Call to a member function getValue() on null
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->transfer()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 20:25:18 --> Call to a member function getValue() on null
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->transfer()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 20:25:29 --> Call to a member function getValue() on null
+#0 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskidicoin\publics->transfer()
+#1 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskidicoin\publics))
+#2 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\PI-backup\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
