@@ -82,7 +82,7 @@ Response
 
 dengan method POST, berfungsi untuk menambahkan saldo ke akun e-money
 
-![Untitled](Readme%20Web%20356a4/Untitled%203.png)
+![Untitled](Readme%20Web%20356a4/admintopup.png)
 
 Response
 
@@ -102,11 +102,11 @@ Lalu bila kita cek di getUserData, saldo akan terupdate
     "status": 201,
     "message": {
         "data": {
-            "account_id": "15",
-            "account_username": "userbuskidi",
-            "account_password": "password",
-            "account_pin": "12345",
-            "nomer_hp": "087812345678",
+            "account_id": "12",
+            "account_username": "bisa",
+            "account_password": "bisa",
+            "account_pin": "12334",
+            "nomer_hp": "081111111120",
             "account_money": "5000",
             "account_role": "0"
         }
@@ -118,7 +118,7 @@ Lalu bila kita cek di getUserData, saldo akan terupdate
 
 dengan method POST, berfungsi untuk mengirimkan saldo dari akun satu ke akun lain dengan mencocokan akun ke nomor telepon yang sesuai
 
-![Untitled](Readme%20Web%20356a4/Untitled%204.png)
+![Untitled](Readme%20Web%20356a4/admintransfer.png)
 
 Response
 
@@ -131,19 +131,19 @@ Response
 }
 ```
 
-Dan bila dicek lagi akunnya, saldo akan terlihat berkurang dari 5000 menjadi 4000
+Dan bila dicek lagi akunnya, saldo akan terlihat berkurang dari 60000 menjadi 599000
 
 ```json
 {
     "status": 201,
     "message": {
         "data": {
-            "account_id": "15",
-            "account_username": "userbuskidi",
-            "account_password": "password",
-            "account_pin": "12345",
-            "nomer_hp": "087812345678",
-            "account_money": "4000",
+            "account_id": "2",
+            "account_username": "oke",
+            "account_password": "oke",
+            "account_pin": "321",
+            "nomer_hp": "081111111112",
+            "account_money": "599000",
             "account_role": "0"
         }
     }
