@@ -82,7 +82,7 @@ Response
 
 dengan method POST, berfungsi untuk menambahkan saldo ke akun e-money
 
-![Untitled](Readme%20Web%20356a4/admintopup.png)
+![Untitled](Readme%20Web%20356a4/admintopup.PNG)
 
 Response
 
@@ -118,7 +118,7 @@ Lalu bila kita cek di getUserData, saldo akan terupdate
 
 dengan method POST, berfungsi untuk mengirimkan saldo dari akun satu ke akun lain dengan mencocokan akun ke nomor telepon yang sesuai
 
-![Untitled](Readme%20Web%20356a4/admintransfer.png)
+![Untitled](Readme%20Web%20356a4/admintransfer.PNG)
 
 Response
 
