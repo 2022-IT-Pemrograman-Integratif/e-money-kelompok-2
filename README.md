@@ -1,5 +1,265 @@
 # BuskidiStore by Kelompok 4 Pemrograman Integratif 2022
 
+### Kelompok 2
+
+| Achmad Aushaf Amrega | 5027201036 |
+| --- | --- |
+| Ariel Daffansyah Aliski | 5027201058 |
+| Danish Putra Dandi | 5027201048 |
+
+## API E-Money BuskidiCoins
+
+### Register
+
+dengan method POST, Register berfungsi untuk membuat akun
+
+![Untitled](Readme%20Web%20356a4/Untitled.png)
+
+Response
+
+```json
+{
+    "status": 201,
+    "message": {
+        "success": "berhasil membuat akun"
+    }
+}
+```
+
+### Login
+
+dengan method POST, Login berfungsi untuk masuk kedalam akun dan mengenerate sebuah token
+
+![Untitled](Readme%20Web%20356a4/Untitled%201.png)
+
+Response
+
+```json
+{
+    "status": 201,
+    "message": {
+        "success": "berhasil login",
+        "data": {
+            "account_id": "15",
+            "account_username": "userbuskidi",
+            "account_password": "password",
+            "account_pin": "12345",
+            "nomer_hp": "087812345678",
+            "account_money": "0",
+            "account_role": "0"
+        },
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTAzNTg0NTIsImlhdCI6MTY1MDM1NDg1MiwiZGF0YSI6eyJhY2NvdW50X2lkIjoiMTUiLCJhY2NvdW50X3VzZXJuYW1lIjoidXNlcmJ1c2tpZGkiLCJhY2NvdW50X3Bhc3N3b3JkIjoicGFzc3dvcmQiLCJhY2NvdW50X3BpbiI6IjEyMzQ1Iiwibm9tZXJfaHAiOiIwODc4MTIzNDU2NzgiLCJhY2NvdW50X21vbmV5IjoiMCIsImFjY291bnRfcm9sZSI6IjAifX0.9bU_T6_0TGGZLyBvnpECMDhaT7bZXz22JeRDAJWf_4w"
+    }
+}
+```
+
+### GetUserData
+
+dengan method GET, berfungsi untuk mengambil informasi akun (sesuai dengan credential IDnya masing - masing)
+
+![Untitled](Readme%20Web%20356a4/Untitled%202.png)
+
+Response
+
+```json
+{
+    "status": 201,
+    "message": {
+        "data": {
+            "account_id": "15",
+            "account_username": "userbuskidi",
+            "account_password": "password",
+            "account_pin": "12345",
+            "nomer_hp": "087812345678",
+            "account_money": "0",
+            "account_role": "0"
+        }
+    }
+}
+```
+
+### Topup
+
+dengan method POST, berfungsi untuk menambahkan saldo ke akun e-money
+
+![Untitled](Readme%20Web%20356a4/Untitled%203.png)
+
+Response
+
+```json
+{
+    "status": 201,
+    "message": {
+        "success": "topup berhasil"
+    }
+}
+```
+
+Lalu bila kita cek di getUserData, saldo akan terupdate
+
+```json
+{
+    "status": 201,
+    "message": {
+        "data": {
+            "account_id": "15",
+            "account_username": "userbuskidi",
+            "account_password": "password",
+            "account_pin": "12345",
+            "nomer_hp": "087812345678",
+            "account_money": "5000",
+            "account_role": "0"
+        }
+    }
+}
+```
+
+### Transfer
+
+dengan method POST, berfungsi untuk mengirimkan saldo dari akun satu ke akun lain dengan mencocokan akun ke nomor telepon yang sesuai
+
+![Untitled](Readme%20Web%20356a4/Untitled%204.png)
+
+Response
+
+```json
+{
+    "status": 201,
+    "message": {
+        "success": "transfer berhasil"
+    }
+}
+```
+
+Dan bila dicek lagi akunnya, saldo akan terlihat berkurang dari 5000 menjadi 4000
+
+```json
+{
+    "status": 201,
+    "message": {
+        "data": {
+            "account_id": "15",
+            "account_username": "userbuskidi",
+            "account_password": "password",
+            "account_pin": "12345",
+            "nomer_hp": "087812345678",
+            "account_money": "4000",
+            "account_role": "0"
+        }
+    }
+}
+```
+
+### see_all_data
+
+dengan method GET, bisa melihat keseluruhan akun yang ada, namun dikhususkan untuk admin (sehingga harus menggunakan token admin)
+
+Response
+
+```json
+[
+    {
+        "account_id": "1",
+        "account_username": "admin",
+        "account_password": "admin",
+        "account_pin": "123",
+        "nomer_hp": "081111111111",
+        "account_money": "0",
+        "account_role": "1"
+    },
+    {
+        "account_id": "2",
+        "account_username": "oke",
+        "account_password": "oke",
+        "account_pin": "321",
+        "nomer_hp": "081111111112",
+        "account_money": "500000",
+        "account_role": "0"
+    },
+    {
+        "account_id": "4",
+        "account_username": "coba",
+        "account_password": "coba",
+        "account_pin": "3211",
+        "nomer_hp": "081111111113",
+        "account_money": "0",
+        "account_role": "0"
+    },
+    {
+        "account_id": "8",
+        "account_username": "amreganteng",
+        "account_password": "amregresik",
+        "account_pin": "364858",
+        "nomer_hp": "081111111114",
+        "account_money": "0",
+        "account_role": "0"
+    },
+    {
+        "account_id": "9",
+        "account_username": "ahha",
+        "account_password": "ahsiap",
+        "account_pin": "111",
+        "nomer_hp": "081111111115",
+        "account_money": "0",
+        "account_role": "0"
+    },
+    {
+        "account_id": "10",
+        "account_username": "pemrograman integratif",
+        "account_password": "hihihi",
+        "account_pin": "2147483647",
+        "nomer_hp": "081111111116",
+        "account_money": "0",
+        "account_role": "0"
+    },
+    {
+        "account_id": "11",
+        "account_username": "asd",
+        "account_password": "asd",
+        "account_pin": "1233",
+        "nomer_hp": "081111111119",
+        "account_money": "2000",
+        "account_role": "0"
+    },
+    {
+        "account_id": "12",
+        "account_username": "bisa",
+        "account_password": "bisa",
+        "account_pin": "12334",
+        "nomer_hp": "081111111120",
+        "account_money": "3000",
+        "account_role": "0"
+    },
+    {
+        "account_id": "13",
+        "account_username": "integratif19april",
+        "account_password": "gantengsekali",
+        "account_pin": "1111111",
+        "nomer_hp": "0888888888",
+        "account_money": "0",
+        "account_role": "0"
+    },
+    {
+        "account_id": "14",
+        "account_username": "bismillah",
+        "account_password": "tampanberani",
+        "account_pin": "13232",
+        "nomer_hp": "08111111",
+        "account_money": "500000",
+        "account_role": "0"
+    },
+    {
+        "account_id": "15",
+        "account_username": "userbuskidi",
+        "account_password": "password",
+        "account_pin": "12345",
+        "nomer_hp": "087812345678",
+        "account_money": "4000",
+        "account_role": "0"
+    }
+]
+```
+
 # CodeIgniter 4 Development
 
 [![Build Status](https://github.com/codeigniter4/CodeIgniter4/workflows/PHPUnit/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions?query=workflow%3A%22PHPUnit%22)
