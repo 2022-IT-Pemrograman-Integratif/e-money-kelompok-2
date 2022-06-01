@@ -1,0 +1,32 @@
+CRITICAL - 2022-06-01 09:34:10 --> Class "App\Controllers\Buskimarket\BaseController" not found
+#0 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\Router\Router.php(518): include_once()
+#1 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('buskimarket/Hom...')
+#2 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('buskimarket/Hom...')
+#3 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-01 09:40:02 --> Class "App\Models\ModelAccount_m_m" not found
+#0 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Login->index()
+#1 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Login))
+#2 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-01 09:40:26 --> Class "App\Models\ModelAccount_m_m" not found
+#0 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Login->index()
+#1 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Login))
+#2 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-01 09:40:49 --> Class "App\Controllers\Buskimarket\ModelAccount_m" not found
+#0 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Login->index()
+#1 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Login))
+#2 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-01 09:58:11 --> Class "App\Models\item_m" not found
+#0 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\AddItem->index()
+#1 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\AddItem))
+#2 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Programs\XAMPP\xamppserver\htdocs\e-money-kelompok-2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

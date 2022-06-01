@@ -34,8 +34,8 @@ class ModelAccount_m extends Model
             'is_unique' => 'password tersebut sudah terpakai'
         ],
         'phone'       => [
-            'required'  => 'Silahkan masukkan PIN',
-            'is_unique' => 'PIN tersebut sudah ada'
+            'required'  => 'Silahkan masukkan Telepon',
+            'is_unique' => 'Telepon tersebut sudah ada'
         ],
         // 'nomer_hp'       => [
         //     'required'  => 'Silahkan masukkan nomer hp',
@@ -45,7 +45,7 @@ class ModelAccount_m extends Model
 
     function verifyLogin($username, $password)
     {
-        $builder = $this->table('account');
+        $builder = $this->table('account_m');
         $builder->where('username', $username);
         $builder->where('password', $password);
         $data = $builder->first();
