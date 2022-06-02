@@ -32,6 +32,12 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+
+$routes->post('/Buskimarket-Register', 'Buskimarket/Register::index');
+$routes->post('/Buskimarket-Login', 'Buskimarket/Login::index');
+$routes->post('/Buskimarket-AddItem', 'Buskimarket/AddItem::index');
+$routes->post('/Buskimarket-Buy', 'Buskimarket/Buy::index');
+$routes->get('/Buskimarket-seeItem', 'Buskimarket/seeItem::index');
 //$routes->resource("buskidicoin/admin"); /* admin/see_all_data */
 
 /*

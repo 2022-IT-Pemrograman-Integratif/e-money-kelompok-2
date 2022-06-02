@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2022 at 08:50 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.11
+-- Waktu pembuatan: 02 Jun 2022 pada 10.25
+-- Versi server: 10.4.21-MariaDB
+-- Versi PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `account`
+-- Struktur dari tabel `account`
 --
 
 CREATE TABLE `account` (
@@ -38,7 +38,7 @@ CREATE TABLE `account` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `account`
+-- Dumping data untuk tabel `account`
 --
 
 INSERT INTO `account` (`account_id`, `account_username`, `account_password`, `account_pin`, `nomer_hp`, `account_money`, `account_role`) VALUES
@@ -54,11 +54,11 @@ INSERT INTO `account` (`account_id`, `account_username`, `account_password`, `ac
 -- --------------------------------------------------------
 
 --
--- Table structure for table `account_m`
+-- Struktur dari tabel `account_m`
 --
 
 CREATE TABLE `account_m` (
-  `id` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `phone` varchar(20) NOT NULL,
@@ -66,10 +66,18 @@ CREATE TABLE `account_m` (
   `date_updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `account_m`
+--
+
+INSERT INTO `account_m` (`id_user`, `username`, `password`, `phone`, `date_created`, `date_updated`) VALUES
+(1, 'rega', 'rega', '0810912', '2022-06-02 14:42:35', '2022-06-02 14:42:35'),
+(2, 'regas', 'regas', '0810913', '2022-06-02 14:52:02', '2022-06-02 14:52:02');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `buy_m`
+-- Struktur dari tabel `buy_m`
 --
 
 CREATE TABLE `buy_m` (
@@ -85,7 +93,7 @@ CREATE TABLE `buy_m` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `detail_transaction`
+-- Struktur dari tabel `detail_transaction`
 --
 
 CREATE TABLE `detail_transaction` (
@@ -96,7 +104,7 @@ CREATE TABLE `detail_transaction` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `detail_transaction`
+-- Dumping data untuk tabel `detail_transaction`
 --
 
 INSERT INTO `detail_transaction` (`detail_id`, `transaction_id`, `detail_item`, `detail_price`) VALUES
@@ -107,21 +115,30 @@ INSERT INTO `detail_transaction` (`detail_id`, `transaction_id`, `detail_item`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `item_m`
+-- Struktur dari tabel `item_m`
 --
 
 CREATE TABLE `item_m` (
   `id` int(11) NOT NULL,
+  `id_seller` int(11) NOT NULL,
   `itemname` varchar(255) NOT NULL,
   `price` int(11) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp(),
   `date_updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `item_m`
+--
+
+INSERT INTO `item_m` (`id`, `id_seller`, `itemname`, `price`, `date_created`, `date_updated`) VALUES
+(1, 1, 'keyboard merah', 1000, '2022-06-02 14:50:50', '2022-06-02 14:50:50'),
+(2, 1, 'keyboard biru', 1000, '2022-06-02 15:20:40', '2022-06-02 15:20:40');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transaction`
+-- Struktur dari tabel `transaction`
 --
 
 CREATE TABLE `transaction` (
@@ -133,7 +150,7 @@ CREATE TABLE `transaction` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `transaction`
+-- Dumping data untuk tabel `transaction`
 --
 
 INSERT INTO `transaction` (`transaction_id`, `account_id`, `transaction_marketplace`, `transaction_timedate`, `transaction_totalprice`) VALUES
@@ -145,7 +162,7 @@ INSERT INTO `transaction` (`transaction_id`, `account_id`, `transaction_marketpl
 --
 
 --
--- Indexes for table `account`
+-- Indeks untuk tabel `account`
 --
 ALTER TABLE `account`
   ADD PRIMARY KEY (`account_id`),
@@ -155,89 +172,89 @@ ALTER TABLE `account`
   ADD UNIQUE KEY `nomer_hp` (`nomer_hp`);
 
 --
--- Indexes for table `account_m`
+-- Indeks untuk tabel `account_m`
 --
 ALTER TABLE `account_m`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_user`);
 
 --
--- Indexes for table `buy_m`
+-- Indeks untuk tabel `buy_m`
 --
 ALTER TABLE `buy_m`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `detail_transaction`
+-- Indeks untuk tabel `detail_transaction`
 --
 ALTER TABLE `detail_transaction`
   ADD PRIMARY KEY (`detail_id`),
   ADD KEY `transcation_id` (`transaction_id`);
 
 --
--- Indexes for table `item_m`
+-- Indeks untuk tabel `item_m`
 --
 ALTER TABLE `item_m`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `transaction`
+-- Indeks untuk tabel `transaction`
 --
 ALTER TABLE `transaction`
   ADD PRIMARY KEY (`transaction_id`),
   ADD KEY `account_id` (`account_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `account`
+-- AUTO_INCREMENT untuk tabel `account`
 --
 ALTER TABLE `account`
   MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `account_m`
+-- AUTO_INCREMENT untuk tabel `account_m`
 --
 ALTER TABLE `account_m`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `buy_m`
+-- AUTO_INCREMENT untuk tabel `buy_m`
 --
 ALTER TABLE `buy_m`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `detail_transaction`
+-- AUTO_INCREMENT untuk tabel `detail_transaction`
 --
 ALTER TABLE `detail_transaction`
   MODIFY `detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `item_m`
+-- AUTO_INCREMENT untuk tabel `item_m`
 --
 ALTER TABLE `item_m`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `transaction`
+-- AUTO_INCREMENT untuk tabel `transaction`
 --
 ALTER TABLE `transaction`
   MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `detail_transaction`
+-- Ketidakleluasaan untuk tabel `detail_transaction`
 --
 ALTER TABLE `detail_transaction`
   ADD CONSTRAINT `transcation_id` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_id`);
 
 --
--- Constraints for table `transaction`
+-- Ketidakleluasaan untuk tabel `transaction`
 --
 ALTER TABLE `transaction`
   ADD CONSTRAINT `account_id` FOREIGN KEY (`account_id`) REFERENCES `account` (`account_id`);

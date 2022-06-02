@@ -13,12 +13,16 @@ class AddItem extends BaseController
 {
     use ResponseTrait;
     public function index()
-    {  
+    {
         $this->item_m = new item_m();
-        if($this->request->getMethod() != "post")
-        {
+        if ($this->request->getMethod() != "post") {
             return $this->fail("This endpoint only accept post");
         }
+        helper('jwt');
+
+        // var_dump(getJWTdata($this->request->getHeader("Authorization")->getValue()));
+        // exit;
+
         $rules = [
             "itemname" => [
                 'label'     => 'itemname',
@@ -28,7 +32,7 @@ class AddItem extends BaseController
                 ]
             ],
             "price" => [
-                'label'     => 'passwrod',
+                'label'     => 'price',
                 'rules'     => 'required',
                 'errors'    => [
                     'required'  => 'silahkan masukkan price'
@@ -39,8 +43,10 @@ class AddItem extends BaseController
             $validation = \Config\Services::validation();
             return $this->fail($validation->getErrors());
         }
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
 
         $data = [
+            'id_seller' => $data_jwt['data']->id,
             'itemname'  => $this->request->getPost('itemname'),
             'price'  => $this->request->getPost('price')
         ];
@@ -49,7 +55,7 @@ class AddItem extends BaseController
             return $this->fail($this->item_m->errors());
         }
 
-        helper('jwt');
+
         $response = [
             'status'    => 201,
             'message'   => [
@@ -58,6 +64,4 @@ class AddItem extends BaseController
         ];
         return $this->respond($response);
     }
-    
 }
-
