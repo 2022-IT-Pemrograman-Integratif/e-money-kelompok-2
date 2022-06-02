@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "6cb04001-ecde-4822-b0c0-d17c819ad937",
+		"name": "PI-MarketPlace",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "rega",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "rega",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0810912",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PI-backup",
+						"2",
+						"e-money-kelompok-2",
+						"Buskimarket",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "rega",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "rega",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PI-backup",
+						"2",
+						"e-money-kelompok-2",
+						"Buskimarket",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddItem",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTQxNTk0MTIsImlhdCI6MTY1NDE1NTgxMiwiZGF0YSI6eyJpZCI6IjEiLCJ1c2VybmFtZSI6InJlZ2EiLCJwYXNzd29yZCI6InJlZ2EiLCJwaG9uZSI6IjA4MTA5MTIiLCJkYXRlX2NyZWF0ZWQiOiIyMDIyLTA2LTAyIDE0OjQyOjM1IiwiZGF0ZV91cGRhdGVkIjoiMjAyMi0wNi0wMiAxNDo0MjozNSJ9fQ.N_DbljlJV8mQHC0dVX2T3x8n2tXr83aWLJgEpwLKcy0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "itemname",
+						"value": "keyboard merah",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "price",
+						"value": "10000",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "itemname",
+							"value": "keyboard merah",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-AddItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PI-backup",
+						"2",
+						"e-money-kelompok-2",
+						"Buskimarket-AddItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "seeItem",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
