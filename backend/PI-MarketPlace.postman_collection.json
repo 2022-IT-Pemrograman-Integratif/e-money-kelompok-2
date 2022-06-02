@@ -15,23 +15,23 @@
 					"formdata": [
 						{
 							"key": "username",
-							"value": "rega",
+							"value": "regas",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "rega",
+							"value": "regas",
 							"type": "text"
 						},
 						{
 							"key": "phone",
-							"value": "0810912",
+							"value": "0810913",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket/Register",
+					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-Register",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -40,8 +40,7 @@
 						"PI-backup",
 						"2",
 						"e-money-kelompok-2",
-						"Buskimarket",
-						"Register"
+						"Buskimarket-Register"
 					]
 				}
 			},
@@ -68,7 +67,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket/Login",
+					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-Login",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -77,8 +76,7 @@
 						"PI-backup",
 						"2",
 						"e-money-kelompok-2",
-						"Buskimarket",
-						"Login"
+						"Buskimarket-Login"
 					]
 				}
 			},
@@ -117,7 +115,7 @@
 					"formdata": [
 						{
 							"key": "itemname",
-							"value": "keyboard merah",
+							"value": "keyboard biru",
 							"type": "text"
 						},
 						{
@@ -146,8 +144,21 @@
 		{
 			"name": "Buy",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-Buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PI-backup",
+						"2",
+						"e-money-kelompok-2",
+						"Buskimarket-Buy"
+					]
+				}
 			},
 			"response": []
 		},
@@ -155,7 +166,20 @@
 			"name": "seeItem",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-seeItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PI-backup",
+						"2",
+						"e-money-kelompok-2",
+						"Buskimarket-seeItem"
+					]
+				}
 			},
 			"response": []
 		}
