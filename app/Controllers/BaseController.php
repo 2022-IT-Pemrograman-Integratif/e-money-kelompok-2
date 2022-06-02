@@ -49,4 +49,48 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+    protected function callAPI($method, $url, $data, $content ,$token){
+        $curl = curl_init();
+        if($token){
+             $data_header = [
+                 "Authorization: Bearer ".$token,
+                 'Content-Type: '.$content
+             ];  
+        }else{
+            $data_header = [
+                 'Content-Type: '.$content
+             ]; 
+        }
+        
+        switch ($method){
+           case "POST":
+              curl_setopt($curl, CURLOPT_POST, 1);
+              if ($data)
+                 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+              break;
+           case "PUT":
+              curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
+              if ($data)
+                 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
+              break;
+          case "PATCH":
+              curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PATCH");
+              if ($data)
+                 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
+              break;
+           default:
+              if ($data)
+                 $url = sprintf("%s?%s", $url, http_build_query($data));
+        }
+        // OPTIONS:
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $data_header);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        // EXECUTE:
+        $result = curl_exec($curl);
+        //if(!$result){die("Connection Failure");}
+        curl_close($curl);
+        return $result;
+     }
 }

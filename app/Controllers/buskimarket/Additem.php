@@ -46,7 +46,7 @@ class AddItem extends BaseController
         $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
 
         $data = [
-            'id_seller' => $data_jwt['data']->id,
+            'id_seller' => $data_jwt['data']->id_user,
             'itemname'  => $this->request->getPost('itemname'),
             'price'  => $this->request->getPost('price')
         ];

@@ -91,3 +91,50 @@ CRITICAL - 2022-06-02 03:23:46 --> Not unique table/alias: 'item_m'
 #9 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2022-06-02 10:41:40 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Helpers\jwt_helper.php(39): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Additem.php(46): getJWTdata('Bearer eyJ0eXAi...')
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\AddItem->index()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\AddItem))
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-02 10:42:16 --> Undefined property: stdClass::$id
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Additem.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 49)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\AddItem->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\AddItem))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 10:42:32 --> Unknown column 'id_seller' in 'field list'
+CRITICAL - 2022-06-02 10:42:32 --> Unknown column 'id_seller' in 'field list'
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `it...', 0)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Additem.php(54): CodeIgniter\BaseModel->save(Array)
+#9 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\AddItem->index()
+#10 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\AddItem))
+#11 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-06-02 10:44:06 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Helpers\jwt_helper.php(39): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Additem.php(46): getJWTdata('Bearer eyJ0eXAi...')
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\AddItem->index()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\AddItem))
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-02 11:08:26 --> Expired token
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Helpers\jwt_helper.php(39): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', Object(Firebase\JWT\Key))
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Additem.php(46): getJWTdata('Bearer eyJ0eXAi...')
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\AddItem->index()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\AddItem))
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

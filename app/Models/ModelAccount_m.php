@@ -10,7 +10,7 @@ class ModelAccount_m extends Model
 {
     use ResponseTrait;
     protected $table = "account_m";
-    protected $primaryKey = "id";
+    protected $primaryKey = "id_user";
     protected $allowedFields = [
         'username',
         'password',

@@ -76,7 +76,8 @@ class Filters extends BaseConfig
                 'buskidicoin/publics/topup',
                 'buskidicoin/publics/transfer',
                 'buskidicoin/admin/*',
-                'buskimarket/AddItem'
+                'buskimarket/AddItem','Buskimarket-AddItem',
+                'buskimarket/Buy','Buskimarket-Buy',
             ]
         ],
         'filter_jwtadmin'   => [
