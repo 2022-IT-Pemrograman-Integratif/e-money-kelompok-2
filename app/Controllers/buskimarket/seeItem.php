@@ -22,8 +22,9 @@ class seeItem extends BaseController
                 "id item" => $d->id,
                 "nama seller" => $d->username,
                 "phone" => $d->phone,
+                "itemname" => $d->itemname,
                 "price" => $d->price,
-                "itemname" => $d->itemname
+                "stock" => $d->stock,
             ];
             array_push($data_send, $data_each);
         }

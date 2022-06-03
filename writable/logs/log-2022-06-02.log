@@ -138,3 +138,13 @@ CRITICAL - 2022-06-02 11:08:26 --> Expired token
 #4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-06-02 21:49:52 --> is_digit is not a valid rule.
+#0 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('is_digit')
+#1 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('price', 'price', '1000', Array, Array)
+#2 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\app\Controllers\buskimarket\Additem.php(51): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\AddItem->index()
+#5 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\AddItem))
+#6 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\PI-backup\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

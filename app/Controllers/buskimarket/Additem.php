@@ -31,11 +31,20 @@ class AddItem extends BaseController
                     'required'  => 'silahkan masukkan itemname'
                 ]
             ],
+            "stock" => [
+                'label'     => 'stock',
+                'rules'     => 'required|numeric',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan price',
+                    'numeric'  => 'harus angka'
+                ]
+            ],
             "price" => [
                 'label'     => 'price',
-                'rules'     => 'required',
+                'rules'     => 'required|numeric',
                 'errors'    => [
-                    'required'  => 'silahkan masukkan price'
+                    'required'  => 'silahkan masukkan price',
+                    'numeric'  => 'harus angka'
                 ]
             ],
         ];
@@ -48,7 +57,8 @@ class AddItem extends BaseController
         $data = [
             'id_seller' => $data_jwt['data']->id_user,
             'itemname'  => $this->request->getPost('itemname'),
-            'price'  => $this->request->getPost('price')
+            'price'  => $this->request->getPost('price'),
+            'stock'  => $this->request->getPost('stock')
         ];
 
         if (!$this->item_m->save($data)) {

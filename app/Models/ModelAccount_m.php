@@ -14,12 +14,14 @@ class ModelAccount_m extends Model
     protected $allowedFields = [
         'username',
         'password',
+        'email',
         'phone',
     ];
 
     protected $validationRules = [
         'username'  => 'required|is_unique[account_m.username]',
         'password'  => 'required|is_unique[account_m.password]',
+        'email'       => 'required|is_unique[account_m.email]|valid_email',
         'phone'       => 'required|is_unique[account_m.phone]',
         // 'nomer_hp'          => 'required|is_unique[account.nomer_hp]'
     ];
@@ -32,6 +34,11 @@ class ModelAccount_m extends Model
         'password'  => [
             'required'  => 'Silahkan masukkan password',
             'is_unique' => 'password tersebut sudah terpakai'
+        ],
+        'email'  => [
+            'required'  => 'Silahkan masukkan email',
+            'is_unique' => 'email tersebut sudah terpakai',
+            'valid_email'   => 'ini bukan email woi'
         ],
         'phone'       => [
             'required'  => 'Silahkan masukkan Telepon',

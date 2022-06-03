@@ -18,6 +18,7 @@ class Register extends BaseController
         $data = [
             'username'  => $this->request->getPost('username'),
             'password'  => $this->request->getPost('password'),
+            'email'       => $this->request->getPost('email'),
             'phone'       => $this->request->getPost('phone'),
             // 'nomer_hp'          => $this->request->getPost('nomer_hp'),
         ];
@@ -35,7 +36,5 @@ class Register extends BaseController
             ]
         ];
         return $this->respond($response);
-
     }
-    
 }

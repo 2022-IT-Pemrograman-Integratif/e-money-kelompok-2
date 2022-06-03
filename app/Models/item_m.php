@@ -14,6 +14,7 @@ class item_m extends Model
     protected $allowedFields = [
         'id_seller',
         'itemname',
+        'stock',
         'price',
     ];
 
@@ -41,16 +42,16 @@ class item_m extends Model
         $query = $builder->get();
         return $query->getResult();
     }
-    // function getDataWhere($where, $whering)
-    // {
-    //     $builder = $this->table('item_m');
-    //     $builder->where($where, $whering);
-    //     $data = $builder->first();
-    //     if (empty($data)) {
-    //         return "data tidak ada";
-    //     }
-    //     return $data;
-    // }
+    function getDataWhere($where, $whering)
+    {
+        $builder = $this->table('item_m');
+        $builder->where($where, $whering);
+        $data = $builder->first();
+        if (empty($data)) {
+            return "data tidak ada";
+        }
+        return $data;
+    }
     // function updateData($where, $whering, $set, $seting)
     // {
     //     $builder = $this->table('item_m');
