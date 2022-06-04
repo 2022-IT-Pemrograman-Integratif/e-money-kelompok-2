@@ -15,6 +15,8 @@ class ModelBuy_m extends Model
         'id_seller',
         'id_buyer',
         'id_item',
+        'amount',
+        'emoney',
         'status'
     ];
 
@@ -22,6 +24,8 @@ class ModelBuy_m extends Model
         'id_seller'  => 'required',
         'id_buyer'  => 'required',
         'id_item'  => 'required',
+        'amount'  => 'required',
+        'emoney'  => 'required',
         'status'  => 'required',
     ];
 

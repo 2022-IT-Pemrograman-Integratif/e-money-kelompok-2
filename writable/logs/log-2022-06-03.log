@@ -1,0 +1,56 @@
+CRITICAL - 2022-06-03 09:26:53 --> Undefined variable $data_transfer_KCN
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\XAMPP\\htdocs...', 23)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-03 09:27:05 --> Call to undefined method App\Controllers\Buskimarket\Buy::respond()
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->index()
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-03 09:37:19 --> Undefined property: stdClass::$stock
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\seeItem.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 27)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\seeItem->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\seeItem))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-03 09:39:42 --> Unsupported operand types: array - string
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->index()
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-03 09:40:24 --> Unsupported operand types: array - string
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->index()
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-03 10:59:27 --> There is no data to update.
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Models\item_m.php(60): CodeIgniter\Model->update()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(120): App\Models\item_m->updateData('stock', 9, 'id', '1')
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->index()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-03 11:04:03 --> Undefined property: stdClass::$id
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 123)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-03 11:06:33 --> Undefined property: stdClass::$id
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 123)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

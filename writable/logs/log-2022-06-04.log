@@ -1,0 +1,223 @@
+CRITICAL - 2022-06-04 14:05:47 --> syntax error, unexpected single-quoted string "emoney", expecting "]"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\XAMPP\\htdocs...')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-04 14:09:09 --> Call to a member function getValue() on null
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->KCN_Pay()
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 14:11:18 --> Undefined array key "emoney"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 390)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->KCN_Pay()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 14:25:27 --> Call to a member function getValue() on null
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Buski_Coins()
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 14:50:19 --> syntax error, unexpected token ";"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\XAMPP\\htdocs...')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-04 14:52:04 --> Undefined array key "token"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 508)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 14:53:03 --> Undefined array key "token"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 508)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 14:54:54 --> syntax error, unexpected double-quoted string "emoney", expecting "]"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\XAMPP\\htdocs...')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-04 15:02:05 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 494)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:02:57 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 494)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:03:01 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 494)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:03:24 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 494)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:03:26 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 494)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:03:27 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 494)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->MoneyZ()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:45:51 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(639): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 639)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Gallecoins()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:46:41 --> Undefined array key "token"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(636): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 636)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Gallecoins()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 15:46:47 --> Undefined array key "token"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(636): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 636)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Gallecoins()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 16:59:45 --> Call to a member function getValue() on null
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 17:00:09 --> Undefined array key "message"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:00:21 --> Undefined array key "massage"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:00:23 --> Undefined array key "massage"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:00:39 --> Undefined array key "message"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:00:42 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\BaseController.php(83): http_build_query('{"email":"buski...')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(756): App\Controllers\BaseController->callAPI('GET', 'https://e-money...', '{"email":"buski...', 'application/jso...', false)
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 17:00:49 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\BaseController.php(83): http_build_query('{"email":"buski...')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(756): App\Controllers\BaseController->callAPI('GET', 'https://e-money...', '{"email":"buski...', 'application/jso...', false)
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 17:01:43 --> http_build_query(): Argument #1 ($data) must be of type array, string given
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\BaseController.php(83): http_build_query('{"email":"buski...')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(756): App\Controllers\BaseController->callAPI('GET', 'https://e-money...', '{"email":"buski...', 'application/jso...', false)
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-04 17:02:59 --> Undefined array key "message"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:03:13 --> Undefined array key "message"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:03:15 --> Undefined array key "message"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:03:16 --> Undefined array key "message"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 742)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:08:25 --> Undefined array key 3
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(787): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 787)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-04 17:09:08 --> Undefined variable $response
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(805): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\XAMPP\\htdocs...', 805)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->Talangin()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

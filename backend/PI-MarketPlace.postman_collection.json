@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "6cb04001-ecde-4822-b0c0-d17c819ad937",
+		"_postman_id": "4709b1ad-38f0-41fc-82d3-573d6e529266",
 		"name": "PI-MarketPlace",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20759372"
 	},
 	"item": [
 		{
@@ -31,13 +32,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-Register",
+					"raw": "http://localhost/GithubPI/2/e-money-kelompok-2/Buskimarket-Register",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"PI-backup",
+						"GithubPI",
 						"2",
 						"e-money-kelompok-2",
 						"Buskimarket-Register"
@@ -56,24 +57,24 @@
 					"formdata": [
 						{
 							"key": "username",
-							"value": "rega",
+							"value": "regas",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "rega",
+							"value": "regas",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-Login",
+					"raw": "http://localhost/GithubPI/2/e-money-kelompok-2/Buskimarket-Login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"PI-backup",
+						"GithubPI",
 						"2",
 						"e-money-kelompok-2",
 						"Buskimarket-Login"
@@ -90,7 +91,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTQxNTk0MTIsImlhdCI6MTY1NDE1NTgxMiwiZGF0YSI6eyJpZCI6IjEiLCJ1c2VybmFtZSI6InJlZ2EiLCJwYXNzd29yZCI6InJlZ2EiLCJwaG9uZSI6IjA4MTA5MTIiLCJkYXRlX2NyZWF0ZWQiOiIyMDIyLTA2LTAyIDE0OjQyOjM1IiwiZGF0ZV91cGRhdGVkIjoiMjAyMi0wNi0wMiAxNDo0MjozNSJ9fQ.N_DbljlJV8mQHC0dVX2T3x8n2tXr83aWLJgEpwLKcy0",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTQxODgwOTAsImlhdCI6MTY1NDE4NDQ5MCwiZGF0YSI6eyJpZF91c2VyIjoiMSIsInVzZXJuYW1lIjoicmVnYXMiLCJwYXNzd29yZCI6InJlZ2FzIiwicGhvbmUiOiIwODEwOTEzIiwiZGF0ZV9jcmVhdGVkIjoiMjAyMi0wNi0wMiAyMjozOTo0MiIsImRhdGVfdXBkYXRlZCI6IjIwMjItMDYtMDIgMjI6Mzk6NDIifX0.Rfh2MeE9H_Ch5jDeNAkt8c_slqSzncO9CG3hUueqbI4",
 							"type": "string"
 						}
 					]
@@ -115,7 +116,7 @@
 					"formdata": [
 						{
 							"key": "itemname",
-							"value": "keyboard biru",
+							"value": "keyboard merah",
 							"type": "text"
 						},
 						{
@@ -126,13 +127,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-AddItem",
+					"raw": "http://localhost/GithubPI/2/e-money-kelompok-2/Buskimarket-AddItem",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"PI-backup",
+						"GithubPI",
 						"2",
 						"e-money-kelompok-2",
 						"Buskimarket-AddItem"
@@ -144,16 +145,46 @@
 		{
 			"name": "Buy",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTQyNzAwMDAsImlhdCI6MTY1NDI2NjQwMCwiZGF0YSI6eyJpZF91c2VyIjoiMSIsInVzZXJuYW1lIjoicmVnYXMiLCJwYXNzd29yZCI6InJlZ2FzIiwicGhvbmUiOiIwODEwOTEzIiwiZGF0ZV9jcmVhdGVkIjoiMjAyMi0wNi0wMiAyMjozOTo0MiIsImRhdGVfdXBkYXRlZCI6IjIwMjItMDYtMDIgMjI6Mzk6NDIifX0.eVFleLEJHY8Cf8_vDXSmncZuN3BKFDoN_0nbnakn_oI",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_item",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "emoney",
+							"value": "asd",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-Buy",
+					"raw": "http://localhost/GithubPI/2/e-money-kelompok-2/Buskimarket-Buy",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"PI-backup",
+						"GithubPI",
 						"2",
 						"e-money-kelompok-2",
 						"Buskimarket-Buy"
@@ -168,13 +199,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/PI-backup/2/e-money-kelompok-2/Buskimarket-seeItem",
+					"raw": "http://localhost/GithubPI/2/e-money-kelompok-2/Buskimarket-seeItem",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"PI-backup",
+						"GithubPI",
 						"2",
 						"e-money-kelompok-2",
 						"Buskimarket-seeItem"

@@ -78,6 +78,11 @@ class Filters extends BaseConfig
                 'buskidicoin/admin/*',
                 'buskimarket/AddItem','Buskimarket-AddItem',
                 'buskimarket/Buy','Buskimarket-Buy',
+                'buskimarket/Buy/KCN_Pay','Buskimarket-Buy-KCN_Pay',
+                'buskimarket/Buy/Buski_Coins','Buskimarket-Buy-Buski_Coins',
+                'buskimarket/Buy/CuanIND','Buskimarket-Buy-CuanIND',
+                'buskimarket/Buy/MoneyZ','Buskimarket-Buy-MoneyZ',
+                'buskimarket/Buy/Gallecoins','Buskimarket-Buy-Gallecoins',
             ]
         ],
         'filter_jwtadmin'   => [

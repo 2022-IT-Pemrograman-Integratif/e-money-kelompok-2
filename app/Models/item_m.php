@@ -52,11 +52,11 @@ class item_m extends Model
         }
         return $data;
     }
-    // function updateData($where, $whering, $set, $seting)
-    // {
-    //     $builder = $this->table('item_m');
-    //     $builder->set($set, $seting);
-    //     $builder->where($where, $whering);
-    //     $builder->update();
-    // }
+    function updateData($where, $whering, $set, $seting)
+    {
+        $builder = $this->table('item_m');
+        $builder->set($set, $seting);
+        $builder->where($where, $whering);
+        $builder->update();
+    }
 }

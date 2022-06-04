@@ -78,6 +78,11 @@ class BaseController extends Controller
               if ($data)
                  curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
               break;
+          case "GET":
+              curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "GET");
+              if ($data)
+                  curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
+              break;
            default:
               if ($data)
                  $url = sprintf("%s?%s", $url, http_build_query($data));

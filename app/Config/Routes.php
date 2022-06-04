@@ -37,6 +37,12 @@ $routes->post('/Buskimarket-Register', 'Buskimarket/Register::index');
 $routes->post('/Buskimarket-Login', 'Buskimarket/Login::index');
 $routes->post('/Buskimarket-AddItem', 'Buskimarket/AddItem::index');
 $routes->post('/Buskimarket-Buy', 'Buskimarket/Buy::index');
+$routes->post('/Buskimarket-Buy-KCN_Pay', 'Buskimarket/Buy::KCN_Pay');
+$routes->post('/Buskimarket-Buy-Buski_Coins', 'Buskimarket/Buy::Buski_Coins');
+$routes->post('/Buskimarket-Buy-CuanIND', 'Buskimarket/Buy::CuanIND');
+$routes->post('/Buskimarket-Buy-MoneyZ', 'Buskimarket/Buy::MoneyZ');
+$routes->post('/Buskimarket-Buy-Gallecoins', 'Buskimarket/Buy::Gallecoins');
+$routes->post('/Buskimarket-Buy-Talangin', 'Buskimarket/Buy::Talangin');
 $routes->get('/Buskimarket-seeItem', 'Buskimarket/seeItem::index');
 //$routes->resource("buskidicoin/admin"); /* admin/see_all_data */
 
