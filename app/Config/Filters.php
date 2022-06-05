@@ -83,6 +83,11 @@ class Filters extends BaseConfig
                 'buskimarket/Buy/CuanIND','Buskimarket-Buy-CuanIND',
                 'buskimarket/Buy/MoneyZ','Buskimarket-Buy-MoneyZ',
                 'buskimarket/Buy/Gallecoins','Buskimarket-Buy-Gallecoins',
+                'buskimarket/Buy/Talangin','Buskimarket-Buy-Talangin',
+                'buskimarket/Buy/PeacePay','Buskimarket-Buy-PeacePay',
+                'buskimarket/Buy/PadPay','Buskimarket-Buy-PadPay',
+                'buskimarket/Buy/PayPhone','Buskimarket-Buy-PayPhone',
+                'buskimarket/Buy/PayFresh','Buskimarket-Buy-PayFresh',
             ]
         ],
         'filter_jwtadmin'   => [

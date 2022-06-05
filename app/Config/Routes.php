@@ -43,6 +43,10 @@ $routes->post('/Buskimarket-Buy-CuanIND', 'Buskimarket/Buy::CuanIND');
 $routes->post('/Buskimarket-Buy-MoneyZ', 'Buskimarket/Buy::MoneyZ');
 $routes->post('/Buskimarket-Buy-Gallecoins', 'Buskimarket/Buy::Gallecoins');
 $routes->post('/Buskimarket-Buy-Talangin', 'Buskimarket/Buy::Talangin');
+$routes->post('/Buskimarket-Buy-PeacePay', 'Buskimarket/Buy::PeacePay');
+$routes->post('/Buskimarket-Buy-PadPay', 'Buskimarket/Buy::PadPay');
+$routes->post('/Buskimarket-Buy-PayPhone', 'Buskimarket/Buy::PayPhone');
+$routes->post('/Buskimarket-Buy-PayFresh', 'Buskimarket/Buy::PayFresh');
 $routes->get('/Buskimarket-seeItem', 'Buskimarket/seeItem::index');
 //$routes->resource("buskidicoin/admin"); /* admin/see_all_data */
 

@@ -379,7 +379,7 @@ class Admin extends BaseController
                 $res = $this->callAPI("POST", "http://ecoin10.my.id/api/transfer", json_encode($data_transfer_eco),  "application/json", $token_input['accessToken']);
                 
                 $res_input = (array) json_decode(trim($res));
-                if($res_input['message'] == "Transfer Successful."){
+                if($res_input['message'] == "Transfer Successfull!"){
                     $response = [
                         'status'    => 201,
                         'message'   => [

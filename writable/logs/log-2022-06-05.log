@@ -1,0 +1,20 @@
+CRITICAL - 2022-06-05 04:42:22 --> Undefined array key "status"
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(1155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\XAMPP\\htdocs...', 1155)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->PayPhone()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 08:16:55 --> Undefined variable $tokenParts
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\Buy.php(1280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\XAMPP\\htdocs...', 1280)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->PayFresh()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 08:17:48 --> Cannot access offset of type string on string
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\Buy->PayFresh()
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\Buy))
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

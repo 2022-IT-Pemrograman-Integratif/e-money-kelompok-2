@@ -679,7 +679,7 @@ class Buy extends BaseController
                 'label'     => 'email',
                 'rules'     => 'required|valid_email',
                 'errors'    => [
-                    'required'  => 'silahkan masukkan id_item',
+                    'required'  => 'silahkan masukkan email',
                     "valid_email"   => 'itu bukan email'
                 ]
             ],
@@ -787,6 +787,22 @@ class Buy extends BaseController
         //var_dump($res_input);
         if($res_input[3]['status'] == "201"){
             
+            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+
+            $data_buy= [
+                "id_buyer"  => $data_jwt['data']->id_user,
+                "id_seller" => $data_item['id_seller'],
+                "id_item"   => $data_item['id'],
+                "amount"    => $data['amount'],
+                "emoney"    => "Talangin",
+                "status"    => 1
+            ];
+
+            if (!$this->ModelBuy_m->save($data_buy)) {
+                return $this->fail($this->ModelBuy_m->errors());
+            }
+
+            
             $response = [
                 'status'    => 201,
                 'message'   => [
@@ -805,4 +821,511 @@ class Buy extends BaseController
     
         return $this->respond($response);
     }
+
+    public function PeacePay()
+    {
+        $rules = [
+            "number" => [
+                'label'     => 'number',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan number'
+                ]
+            ],
+            "password" => [
+                'label'     => 'password',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan password'
+                ]
+            ],
+            "id_item" => [
+                'label'     => 'id_item',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan id_item'
+                ]
+            ],
+            "amount" => [
+                'label'     => 'amount',
+                'rules'     => 'required|numeric',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan emoney',
+                    'numeric'  => 'harus angka'
+                ]
+            ],
+        ];
+        if (!$this->validate($rules)) {
+            $validation = \Config\Services::validation();
+            return $this->fail($validation->getErrors());
+        }
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data = [
+            'id_item'   => $this->request->getPost('id_item'),
+            'amount'    => $this->request->getPost('amount')
+        ];
+
+        if ($data['amount'] <= 0) {
+            return $this->fail("gk bisa gitu bang");
+        }
+
+        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        if ($data_item == "data tidak ada") {
+            return $this->fail("item tersebut tidak ada");
+        }
+
+        if ($data_item['stock'] - $data['amount'] < 0) {
+            return $this->fail("barang gk cukup bang");
+        }
+
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data_login_KCN = [
+            "number" => $this->request->getPost('number'),
+            "password"  => $this->request->getPost('password') 
+        ];
+        $token = $this->callAPI("POST", "https://e-money-kelompok-12.herokuapp.com/api/login", json_encode($data_login_KCN),  "application/json", false);
+        $token_input = (array) json_decode(trim($token));
+
+        if(isset($token_input['status'])){
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'error'      => "Credential akun PeacePay tidak ada"
+                ]
+            ];
+            return $this->respond($response);
+        }
+
+        $data_transfer_moneyz = [
+            "tujuan"   => "089191919100",
+            "amount"       => (int)($data_item['price'] * $data['amount'])
+        ];
+        $res = $this->callAPI("POST", "https://e-money-kelompok-12.herokuapp.com/api/buskidicoin", json_encode($data_transfer_moneyz),  "application/json", $token_input['token']);
+        
+        $res_input = (array) json_decode(trim($res));
+        if($res_input['status'] == "200"){
+            
+            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+
+            $data_buy= [
+                "id_buyer"  => $data_jwt['data']->id_user,
+                "id_seller" => $data_item['id_seller'],
+                "id_item"   => $data_item['id'],
+                "amount"    => $data['amount'],
+                "emoney"    => "PeacePay",
+                "status"    => 1
+            ];
+
+            if (!$this->ModelBuy_m->save($data_buy)) {
+                return $this->fail($this->ModelBuy_m->errors());
+            }
+
+            $response = [
+                'status'    => 201,
+                'message'   => [
+                    'success'      => "berhasil memesan barang dengan pembayaran PeacePay",
+                    'note'         => "dimohon untuk menunggu seller mengonfirmasi pemesanan"
+                ]
+            ];
+
+        }else{
+            $response = [
+                'status'    => $res_input['status'],
+                'message'   => [
+                    'error'      => $res_input['msg']
+                ]
+            ];
+        }
+        
+        return $this->respond($response);
+    }
+
+    public function PadPay()
+    {
+        $rules = [
+            "email" => [
+                'label'     => 'email',
+                'rules'     => 'required|valid_email',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan email',
+                    "valid_email"   => 'itu bukan email'
+                ]
+            ],
+            "password" => [
+                'label'     => 'password',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan password'
+                ]
+            ],
+            "id_item" => [
+                'label'     => 'id_item',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan id_item'
+                ]
+            ],
+            "amount" => [
+                'label'     => 'amount',
+                'rules'     => 'required|numeric',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan emoney',
+                    'numeric'  => 'harus angka'
+                ]
+            ],
+        ];
+        if (!$this->validate($rules)) {
+            $validation = \Config\Services::validation();
+            return $this->fail($validation->getErrors());
+        }
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data = [
+            'id_item'   => $this->request->getPost('id_item'),
+            'amount'    => $this->request->getPost('amount')
+        ];
+
+        if ($data['amount'] <= 0) {
+            return $this->fail("gk bisa gitu bang");
+        }
+
+        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        if ($data_item == "data tidak ada") {
+            return $this->fail("item tersebut tidak ada");
+        }
+
+        if ($data_item['stock'] - $data['amount'] < 0) {
+            return $this->fail("barang gk cukup bang");
+        }
+
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data_login_pad = [
+            "email"     => $this->request->getPost('email'),
+            "password"  => $this->request->getPost('password')
+        ];
+        $token = $this->callAPI("POST", "https://mypadpay.xyz/padpay/api/login.php", json_encode($data_login_pad),  "application/json", false);
+        $token_input = (array) json_decode(trim($token));
+
+        if($token_input['msg'] != "Login Successfully"){
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'error'      => "Credential akun PadPay tidak ada"
+                ]
+            ];
+            return $this->respond($response);
+        }
+        
+        $data_transfer_pad = [
+            "email"     => $this->request->getPost('email'),
+            "password"  => $this->request->getPost('password'),
+            "jwt"       => $token_input['Data']->jwt,
+            "tujuan"    => "089191919100",   
+            "jumlah"    => $data_item['price'] * $data['amount'],
+        ];
+
+        $res = $this->callAPI("POST", "https://mypadpay.xyz/padpay/api/coin/buskicoins.php", json_encode($data_transfer_pad),  "application/json", false);
+        
+        if(strlen($res) >= 147){
+            
+            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+
+            $data_buy= [
+                "id_buyer"  => $data_jwt['data']->id_user,
+                "id_seller" => $data_item['id_seller'],
+                "id_item"   => $data_item['id'],
+                "amount"    => $data['amount'],
+                "emoney"    => "PadPay",
+                "status"    => 1
+            ];
+
+            if (!$this->ModelBuy_m->save($data_buy)) {
+                return $this->fail($this->ModelBuy_m->errors());
+            }
+
+            $response = [
+                'status'    => 201,
+                'message'   => [
+                    'success'      => "berhasil memesan barang dengan pembayaran PadPay",
+                    'note'         => "dimohon untuk menunggu seller mengonfirmasi pemesanan"
+                ]
+            ];
+            
+        }else{
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'success'      => "Pembayaran dengan PadPay gagal"
+                ]
+            ];  
+        }
+        
+        
+        return $this->respond($response);
+
+    }
+
+    public function PayPhone()
+    {
+        $rules = [
+            "telepon" => [
+                'label'     => 'telepon',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan telepon'
+                ]
+            ],
+            "password" => [
+                'label'     => 'password',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan password'
+                ]
+            ],
+            "id_item" => [
+                'label'     => 'id_item',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan id_item'
+                ]
+            ],
+            "amount" => [
+                'label'     => 'amount',
+                'rules'     => 'required|numeric',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan emoney',
+                    'numeric'  => 'harus angka'
+                ]
+            ],
+        ];
+        if (!$this->validate($rules)) {
+            $validation = \Config\Services::validation();
+            return $this->fail($validation->getErrors());
+        }
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data = [
+            'id_item'   => $this->request->getPost('id_item'),
+            'amount'    => $this->request->getPost('amount')
+        ];
+
+        if ($data['amount'] <= 0) {
+            return $this->fail("gk bisa gitu bang");
+        }
+
+        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        if ($data_item == "data tidak ada") {
+            return $this->fail("item tersebut tidak ada");
+        }
+
+        if ($data_item['stock'] - $data['amount'] < 0) {
+            return $this->fail("barang gk cukup bang");
+        }
+
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data_login_paypon = [
+            "telepon"     => $this->request->getPost('telepon'),
+            "password"      => $this->request->getPost('password') 
+        ];
+        $token = $this->callAPI("POST", "http://fp-payphone.herokuapp.com/public/api/login", $data_login_paypon,  "multipart/form-data", false);
+        $token_input = (array) json_decode(trim($token));
+
+        if($token_input['message'] != "Login Berhasil"){
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'error'      => "Credential akun PayPhone tidak ada"
+                ]
+            ];
+            return $this->respond($response);
+        }
+        
+        $data_transfer_paypon = [
+            "telepon"    => "00088811133322",   
+            "jumlah"    => $data_item['price'] * $data['amount'],
+            "emoney"    => "Buski Coins"
+        ];
+        $res = $this->callAPI("POST", "http://fp-payphone.herokuapp.com/public/api/transfer" , $data_transfer_paypon,   "multipart/form-data", $token_input['token']);
+        
+        $res_input = (array) json_decode(trim($res));
+        if(isset($res_input['status'])){
+            if($res_input['status'] == "201"){
+                $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+    
+                $data_buy= [
+                    "id_buyer"  => $data_jwt['data']->id_user,
+                    "id_seller" => $data_item['id_seller'],
+                    "id_item"   => $data_item['id'],
+                    "amount"    => $data['amount'],
+                    "emoney"    => "PayPhone",
+                    "status"    => 1
+                ];
+    
+                if (!$this->ModelBuy_m->save($data_buy)) {
+                    return $this->fail($this->ModelBuy_m->errors());
+                }
+    
+                $response = [
+                    'status'    => 201,
+                    'message'   => [
+                        'success'      => "berhasil memesan barang dengan pembayaran PayPhone",
+                        'note'         => "dimohon untuk menunggu seller mengonfirmasi pemesanan"
+                    ]
+                ];
+            }else{
+                $response = [
+                    'status'    => 400,
+                    'message'   => [
+                        'success'      => "Pembayaran dengan PayPhone gagal"
+                    ]
+                ];  
+            }
+        }else{
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'success'      => "Pembayaran dengan PayPhone gagal"
+                ]
+            ];  
+        }
+        
+        
+        
+        
+        return $this->respond($response);
+    }
+
+    public function PayFresh()
+    {
+        $rules = [
+            "email" => [
+                'label'     => 'email',
+                'rules'     => 'required|valid_email',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan email',
+                    "valid_email"   => 'itu bukan email'
+                ]
+            ],
+            "password" => [
+                'label'     => 'password',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan password'
+                ]
+            ],
+            "id_item" => [
+                'label'     => 'id_item',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan id_item'
+                ]
+            ],
+            "amount" => [
+                'label'     => 'amount',
+                'rules'     => 'required|numeric',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan emoney',
+                    'numeric'  => 'harus angka'
+                ]
+            ],
+        ];
+        if (!$this->validate($rules)) {
+            $validation = \Config\Services::validation();
+            return $this->fail($validation->getErrors());
+        }
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data = [
+            'id_item'   => $this->request->getPost('id_item'),
+            'amount'    => $this->request->getPost('amount')
+        ];
+
+        if ($data['amount'] <= 0) {
+            return $this->fail("gk bisa gitu bang");
+        }
+
+        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        if ($data_item == "data tidak ada") {
+            return $this->fail("item tersebut tidak ada");
+        }
+
+        if ($data_item['stock'] - $data['amount'] < 0) {
+            return $this->fail("barang gk cukup bang");
+        }
+
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data_login_payfre = [
+            "email"     => $this->request->getPost('email'),
+            "password"  => $this->request->getPost('password')
+        ];
+        $token = $this->callAPI("POST", "https://payfresh.herokuapp.com/api/login", json_encode($data_login_payfre),  "application/json", false);
+        $token_input = (array) json_decode(trim($token));
+
+        if(isset($token_input['message'])){
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'error'      => "Credential akun PayFresh tidak ada"
+                ]
+            ];
+            return $this->respond($response);
+        }
+
+        $token_parts = explode(".", $token_input['token']);
+        $tokenPayload = base64_decode($token_parts[1]);
+        $tokenPayload = (array) json_decode(trim($tokenPayload));
+        // var_dump($tokenPayload['user']->id);
+        // return $this->respond($tokenPayload);
+
+        $data_transfer_payfre = [
+            "nomortujuan"    => "00088811133322",   
+            "nominal"    => $data_item['price'] * $data['amount'],
+            "description"   => "pembayaran dengan PayFresh",
+            "id"        => $tokenPayload['user']->id
+        ];
+        $res = $this->callAPI("POST", "https://payfresh.herokuapp.com/api/user/buskidi" , json_encode($data_transfer_payfre),  "application/json", $token_input['token']);
+        
+        $res_input = (array) json_decode(trim($res));
+        if($res_input['status'] == "201"){
+            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+    
+            $data_buy= [
+                "id_buyer"  => $data_jwt['data']->id_user,
+                "id_seller" => $data_item['id_seller'],
+                "id_item"   => $data_item['id'],
+                "amount"    => $data['amount'],
+                "emoney"    => "PayFresh",
+                "status"    => 1
+            ];
+
+            if (!$this->ModelBuy_m->save($data_buy)) {
+                return $this->fail($this->ModelBuy_m->errors());
+            }
+
+            $response = [
+                'status'    => 201,
+                'message'   => [
+                    'success'      => "berhasil memesan barang dengan pembayaran PayFresh",
+                    'note'         => "dimohon untuk menunggu seller mengonfirmasi pemesanan"
+                ]
+            ];
+        }else{
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'success'      => "Pembayaran dengan Payfresh gagal"
+                ]
+            ];  
+        }
+        
+        
+        
+        return $this->respond($response);
+    }
+
 }
