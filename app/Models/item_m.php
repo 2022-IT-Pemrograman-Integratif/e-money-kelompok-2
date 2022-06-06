@@ -10,7 +10,7 @@ class item_m extends Model
 {
     use ResponseTrait;
     protected $table = "item_m";
-    protected $primaryKey = "id";
+    protected $primaryKey = "id_item";
     protected $allowedFields = [
         'id_seller',
         'itemname',

@@ -29,12 +29,32 @@ class Register extends BaseController
             return $this->fail($this->modelAccount_m->errors());
         }
 
-        $response = [
-            'status'    => 201,
-            'message'   => [
-                'success'   => 'berhasil membuat akun'
-            ]
+        $data_regis_BS = [
+            'account_username'  => $data['username'],
+            'account_password'  => $data['password'],
+            'account_pin'       => "0",
+            'nomer_hp'          => $data['nomer_hp'],
         ];
+
+        $data_regis = $this->callAPI("POST", "https://arielaliski.xyz/e-money-kelompok-2/public/buskidicoin/publics/register", $data_regis_BS,  "multipart/form-data", false);
+        $data_regis = (array) json_decode(trim($data_regis));
+        
+        if($data_regis['status'] == '400'){
+            $response = [
+                'status'    => 201,
+                'message'   => [
+                    'success'   => 'berhasil membuat akun buskimarket'
+                ]
+            ];
+        }else{
+            $response = [
+                'status'    => 201,
+                'message'   => [
+                    'success'   => 'berhasil membuat akun buskimarket dan buskicoin'
+                ]
+            ];
+        }
+        
         return $this->respond($response);
     }
 }

@@ -64,7 +64,7 @@ class ModelAccount_m extends Model
 
     function getDataWhere($where, $whering)
     {
-        $builder = $this->table('account');
+        $builder = $this->table('account_m');
         $builder->where($where, $whering);
         $data = $builder->first();
         if (empty($data)) {
@@ -72,11 +72,11 @@ class ModelAccount_m extends Model
         }
         return $data;
     }
-    function updateData($where, $whering, $set, $seting)
-    {
-        $builder = $this->table('account');
-        $builder->set($set, $seting);
-        $builder->where($where, $whering);
-        $builder->update();
-    }
+    // function updateData($where, $whering, $set, $seting)
+    // {
+    //     $builder = $this->table('account');
+    //     $builder->set($set, $seting);
+    //     $builder->where($where, $whering);
+    //     $builder->update();
+    // }
 }

@@ -50,6 +50,9 @@ $routes->post('/Buskimarket-Buy-PayFresh', 'Buskimarket/Buy::PayFresh');
 $routes->post('/Buskimarket-Buy-ECoin', 'Buskimarket/Buy::ECoin');
 $routes->get('/Buskimarket-SeeItem', 'Buskimarket/SeeItem::index');
 $routes->get('/Buskimarket-SeeOrder', 'Buskimarket/SeeOrder::index');
+$routes->get('/Buskimarket-SeeBuytoConfirm', 'Buskimarket/SeeBuytoConfirm::index');
+$routes->post('/Buskimarket-SendItem', 'Buskimarket/SendItem::index');
+$routes->post('/Buskimarket-ConfirmBuy', 'Buskimarket/ConfirmBuy::index');
 //$routes->resource("buskidicoin/admin"); /* admin/see_all_data */
 
 /*

@@ -1,0 +1,92 @@
+CRITICAL - 2022-06-06 09:53:38 --> Undefined property: stdClass::$id
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SeeOrder.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 28)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SeeOrder->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SeeOrder))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-06 09:57:56 --> Undefined variable $data_jwt
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SendItem.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\XAMPP\\htdocs...', 36)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SendItem->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SendItem))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-06 09:59:11 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-06-06 09:59:11 --> Unknown column 'id' in 'where clause'
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Models\ModelBuy_m.php(62): CodeIgniter\BaseModel->first()
+#7 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SendItem.php(38): App\Models\ModelBuy_m->cek_buy('1', '1')
+#8 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SendItem->index()
+#9 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SendItem))
+#10 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-06 09:59:30 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-06-06 09:59:30 --> Unknown column 'id' in 'where clause'
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Models\ModelBuy_m.php(62): CodeIgniter\BaseModel->first()
+#7 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SendItem.php(38): App\Models\ModelBuy_m->cek_buy('1', '1')
+#8 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SendItem->index()
+#9 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SendItem))
+#10 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-06 10:00:08 --> There is no data to update.
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Models\ModelBuy_m.php(85): CodeIgniter\Model->update()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SendItem.php(43): App\Models\ModelBuy_m->updateData('status', 2, 'id_buy', '1')
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SendItem->index()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SendItem))
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-06 10:00:54 --> There is no data to update.
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Models\ModelBuy_m.php(85): CodeIgniter\Model->update()
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SendItem.php(43): App\Models\ModelBuy_m->updateData('status', 2, 'id_buy', '1')
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SendItem->index()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SendItem))
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-06 10:03:16 --> Unknown column 'item_m.id' in 'on clause'
+CRITICAL - 2022-06-06 10:03:16 --> Unknown column 'item_m.id' in 'on clause'
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Models\ModelBuy_m.php(52): CodeIgniter\Model->__call('get', Array)
+#6 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SeeBuytoConfirm.php(24): App\Models\ModelBuy_m->see_buy('1')
+#7 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SeeBuytoConfirm->index()
+#8 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SeeBuytoConfirm))
+#9 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-06 10:06:21 --> Undefined property: stdClass::$id
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SeeBuytoConfirm.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 28)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SeeBuytoConfirm->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SeeBuytoConfirm))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-06 11:23:05 --> Undefined property: stdClass::$id
+#0 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\app\Controllers\buskimarket\SeeItem.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\XAMPP\\htdocs...', 22)
+#1 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(832): App\Controllers\Buskimarket\SeeItem->index()
+#2 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buskimarket\SeeItem))
+#3 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\XAMPP\htdocs\GithubPI\2\e-money-kelompok-2\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

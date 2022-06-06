@@ -90,6 +90,9 @@ class Filters extends BaseConfig
                 'buskimarket/Buy/PayFresh','Buskimarket-Buy-PayFresh',
                 'buskimarket/Buy/ECoin','Buskimarket-Buy-ECoin',
                 'buskimarket/SeeOrder','Buskimarket-SeeOrder',
+                'buskimarket/SeeBuytoConfirm','Buskimarket-SeeBuytoConfirm',
+                'buskimarket/SendItem','Buskimarket-SendItem',
+                'buskimarket/ConfirmBuy','Buskimarket-ConfirmBuy',
             ]
         ],
         'filter_jwtadmin'   => [
