@@ -25,12 +25,58 @@ class SeeHistory extends BaseController
     {
         $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
 
-        $data_tosee = $this->ModelBuy_m->see_history('id_buyer', $data_jwt['data']->id_user);
-        return $this->respond($data_tosee);
+        $data = $this->ModelBuy_m->see_history('id_buyer', $data_jwt['data']->id_user);
+        $data_send = array();
+        foreach ($data as $d) {
+            $data_each = [
+                "id pembelian" => $d->id_buy,
+                "nama item" => $d->itemname,
+                "nama seller" => $d->username,
+                "nohp seller" => $d->phone,
+                "jumlah" => $d->amount,
+                "status"  => "pembelian sukses",
+                "tanggal"   => $d->date_created
+            ];
+    
+            array_push($data_send, $data_each);
+        }
+        if(!$data_send){
+            $response =[
+                'status'    => 200,
+                'message'   => 'belum ada item yang dibeli'
+            ];
+            return $this->respond($response, 200);
+        }
+        return $this->respond($data_send, 200);
     }
 
     public function sell()
     {
-        return view('buskidi');
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data = $this->ModelBuy_m->see_history('id_seller', $data_jwt['data']->id_user);
+        $data_send = array();
+        foreach ($data as $d) {
+            $data_each = [
+                "id pembelian" => $d->id_buy,
+                "nama item" => $d->itemname,
+                "nama buyer" => $d->username,
+                "nohp buyer" => $d->phone,
+                "jumlah" => $d->amount,
+                "status"  => "penjualan sukses",
+                "tanggal"   => $d->date_created
+            ];
+    
+            array_push($data_send, $data_each);
+        }
+
+        if(!$data_send){
+            $response =[
+                'status'    => 200,
+                'message'   => 'belum ada item yang terjual'
+            ];
+            return $this->respond($response, 200);
+        }
+        return $this->respond($data_send, 200);
     }
 }

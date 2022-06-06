@@ -93,6 +93,8 @@ class Filters extends BaseConfig
                 'buskimarket/SeeBuytoConfirm','Buskimarket-SeeBuytoConfirm',
                 'buskimarket/SendItem','Buskimarket-SendItem',
                 'buskimarket/ConfirmBuy','Buskimarket-ConfirmBuy',
+                'buskimarket/SeeHistory/Buy','Buskimarket-SeeHistory-buy',
+                'buskimarket/SeeHistory/sell','Buskimarket-SeeHistory-sell',
             ]
         ],
         'filter_jwtadmin'   => [

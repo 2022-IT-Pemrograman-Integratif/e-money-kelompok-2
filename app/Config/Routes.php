@@ -51,6 +51,8 @@ $routes->post('/Buskimarket-Buy-ECoin', 'Buskimarket/Buy::ECoin');
 $routes->get('/Buskimarket-SeeItem', 'Buskimarket/SeeItem::index');
 $routes->get('/Buskimarket-SeeOrder', 'Buskimarket/SeeOrder::index');
 $routes->get('/Buskimarket-SeeBuytoConfirm', 'Buskimarket/SeeBuytoConfirm::index');
+$routes->get('/Buskimarket-SeeHistory-buy', 'Buskimarket/SeeHistory::buy');
+$routes->get('/Buskimarket-SeeHistory-sell', 'Buskimarket/SeeHistory::sell');
 $routes->post('/Buskimarket-SendItem', 'Buskimarket/SendItem::index');
 $routes->post('/Buskimarket-ConfirmBuy', 'Buskimarket/ConfirmBuy::index');
 //$routes->resource("buskidicoin/admin"); /* admin/see_all_data */
