@@ -88,6 +88,8 @@ class Filters extends BaseConfig
                 'buskimarket/Buy/PadPay','Buskimarket-Buy-PadPay',
                 'buskimarket/Buy/PayPhone','Buskimarket-Buy-PayPhone',
                 'buskimarket/Buy/PayFresh','Buskimarket-Buy-PayFresh',
+                'buskimarket/Buy/ECoin','Buskimarket-Buy-ECoin',
+                'buskimarket/SeeOrder','Buskimarket-SeeOrder',
             ]
         ],
         'filter_jwtadmin'   => [

@@ -47,7 +47,9 @@ $routes->post('/Buskimarket-Buy-PeacePay', 'Buskimarket/Buy::PeacePay');
 $routes->post('/Buskimarket-Buy-PadPay', 'Buskimarket/Buy::PadPay');
 $routes->post('/Buskimarket-Buy-PayPhone', 'Buskimarket/Buy::PayPhone');
 $routes->post('/Buskimarket-Buy-PayFresh', 'Buskimarket/Buy::PayFresh');
-$routes->get('/Buskimarket-seeItem', 'Buskimarket/seeItem::index');
+$routes->post('/Buskimarket-Buy-ECoin', 'Buskimarket/Buy::ECoin');
+$routes->get('/Buskimarket-SeeItem', 'Buskimarket/SeeItem::index');
+$routes->get('/Buskimarket-SeeOrder', 'Buskimarket/SeeOrder::index');
 //$routes->resource("buskidicoin/admin"); /* admin/see_all_data */
 
 /*

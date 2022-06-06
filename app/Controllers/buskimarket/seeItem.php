@@ -8,7 +8,7 @@ use App\Models\item_m;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
-class seeItem extends BaseController
+class SeeItem extends BaseController
 {
     use ResponseTrait;
     public function index()

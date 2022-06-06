@@ -1323,7 +1323,139 @@ class Buy extends BaseController
             ];  
         }
         
+        return $this->respond($response);
+    }
+
+    public function ECoin()
+    {
+        $rules = [
+            "phone" => [
+                'label'     => 'phone',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan phone'
+                ]
+            ],
+            "password" => [
+                'label'     => 'password',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan password'
+                ]
+            ],
+            "id_item" => [
+                'label'     => 'id_item',
+                'rules'     => 'required',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan id_item'
+                ]
+            ],
+            "amount" => [
+                'label'     => 'amount',
+                'rules'     => 'required|numeric',
+                'errors'    => [
+                    'required'  => 'silahkan masukkan emoney',
+                    'numeric'  => 'harus angka'
+                ]
+            ],
+        ];
+        if (!$this->validate($rules)) {
+            $validation = \Config\Services::validation();
+            return $this->fail($validation->getErrors());
+        }
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data = [
+            'id_item'   => $this->request->getPost('id_item'),
+            'amount'    => $this->request->getPost('amount')
+        ];
+
+        if ($data['amount'] <= 0) {
+            return $this->fail("gk bisa gitu bang");
+        }
+
+        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        if ($data_item == "data tidak ada") {
+            return $this->fail("item tersebut tidak ada");
+        }
+
+        if ($data_item['stock'] - $data['amount'] < 0) {
+            return $this->fail("barang gk cukup bang");
+        }
+
+        $data_jwt = getJWTdata($this->request->getHeader("Authorization")->getValue());
+
+        $data_login_eco = [
+            "phone"     => $this->request->getPost('phone'),
+            "password"  => $this->request->getPost('password')
+        ];
+        $token = $this->callAPI("POST", "http://ecoin10.my.id/api/masuk", json_encode($data_login_eco),  "application/json", false);
+        $token_input = (array) json_decode(trim($token));
+
+        if(isset($token_input['message'])){
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'error'      => "Credential akun PayFresh tidak ada"
+                ]
+            ];
+            return $this->respond($response);
+        }
         
+        $data_transfer_eco = [
+            "amount"    => (int)($data_item['price'] * $data['amount']),
+            "phone2"    => "081359781268",
+            "description"   => "Pembayaran buskimarket dengan menggunakan E-Money"
+        ];
+        $res = $this->callAPI("POST", "http://ecoin10.my.id/api/transfer", json_encode($data_transfer_eco),  "application/json", $token_input['accessToken']);
+        
+        $res_input = (array) json_decode(trim($res));
+        if($res_input['message'] == "Transfer Successfull."){
+            $data_login_BS = [
+                "username" => "akun_penampung",
+                "password"  => "akun_penampung"
+            ];
+            $token = $this->callAPI("POST", "https://arielaliski.xyz/e-money-kelompok-2/public/buskidicoin/publics/login", $data_login_BS,  "multipart/form-data", false);
+            $token = (array) json_decode($token);
+
+            $data_send["nomer_hp"]  = "081359781268";
+            $data_send["nomer_hp_tujuan"] = "089191919100";
+            $data_send["e_money_tujuan"] = "Buski Coins";
+            $data_send['amount']    = $data_item['price'] * $data['amount'];
+            $data_send["description"]    = "Pembayaran BuskiMarket dengan ECoin";
+            $resp = $this->callAPI("POST", "https://arielaliski.xyz/e-money-kelompok-2/public/buskidicoin/admin/transfer", $data_send,  "multipart/form-data", $token['message']->token);
+            $input = (array) json_decode(trim($resp));
+
+            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+    
+            $data_buy= [
+                "id_buyer"  => $data_jwt['data']->id_user,
+                "id_seller" => $data_item['id_seller'],
+                "id_item"   => $data_item['id'],
+                "amount"    => $data['amount'],
+                "emoney"    => "PayFresh",
+                "status"    => 1
+            ];
+
+            if (!$this->ModelBuy_m->save($data_buy)) {
+                return $this->fail($this->ModelBuy_m->errors());
+            }
+
+            $response = [
+                'status'    => 201,
+                'message'   => [
+                    'success'      => "berhasil memesan barang dengan pembayaran ECoin",
+                    'note'         => "dimohon untuk menunggu seller mengonfirmasi pemesanan"
+                ]
+            ];
+        }else{
+            $response = [
+                'status'    => 400,
+                'message'   => [
+                    'error'      => $res_input['message']
+                ]
+            ];
+        }
         
         return $this->respond($response);
     }
