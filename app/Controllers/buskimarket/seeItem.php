@@ -19,7 +19,7 @@ class SeeItem extends BaseController
         $data_send = array();
         foreach ($data as $d) {
             $data_each = [
-                "id item" => $d->id,
+                "id item" => $d->id_item,
                 "nama seller" => $d->username,
                 "phone" => $d->phone,
                 "itemname" => $d->itemname,
