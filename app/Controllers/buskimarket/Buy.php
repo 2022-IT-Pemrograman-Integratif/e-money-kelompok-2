@@ -26,7 +26,7 @@ class Buy extends BaseController
             'status'    => 201,
             'message'   => [
                 'welcome'         => "anda bisa membeli berbagai macam keyboard di buskimarket",
-                'emoney'      => "emoney yang tersedia Buski_Coins, KCN_Pay, CuanIND, MoneyZ"
+                'emoney'      => "emoney yang tersedia Buski_Coins, KCN_Pay, CuanIND, MoneyZ, Gallecoins, Talangin, ECoin"
                 
             ]
         ];
@@ -81,7 +81,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -135,12 +135,12 @@ class Buy extends BaseController
 
         if ($res_input['status'] == "200") {
             
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "KCN Pay",
                 "status"    => 1
@@ -217,7 +217,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -274,12 +274,12 @@ class Buy extends BaseController
 
         if ($res_input['status'] == "201") {
             
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "Buski Coins",
                 "status"    => 1
@@ -357,7 +357,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -397,12 +397,12 @@ class Buy extends BaseController
                 ]
             ]; 
         }else{
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "CuanIND",
                 "status"    => 1
@@ -474,7 +474,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -521,12 +521,12 @@ class Buy extends BaseController
                 return $this->respond($response);
             }
 
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "MoneyZ",
                 "status"    => 1
@@ -602,7 +602,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -638,12 +638,12 @@ class Buy extends BaseController
         
         $res_input = (array) json_decode(trim($res));
         if($res_input['status'] == "1"){
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "Gallecoins",
                 "status"    => 1
@@ -722,7 +722,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -788,12 +788,12 @@ class Buy extends BaseController
         //var_dump($res_input);
         if($res_input[3]['status'] == "201"){
             
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "Talangin",
                 "status"    => 1
@@ -871,7 +871,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -908,12 +908,12 @@ class Buy extends BaseController
         $res_input = (array) json_decode(trim($res));
         if($res_input['status'] == "200"){
             
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "PeacePay",
                 "status"    => 1
@@ -992,7 +992,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -1032,12 +1032,12 @@ class Buy extends BaseController
         
         if(strlen($res) >= 147){
             
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
 
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "PadPay",
                 "status"    => 1
@@ -1117,7 +1117,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -1155,12 +1155,12 @@ class Buy extends BaseController
         $res_input = (array) json_decode(trim($res));
         if(isset($res_input['status'])){
             if($res_input['status'] == "201"){
-                $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+                $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
     
                 $data_buy= [
                     "id_buyer"  => $data_jwt['data']->id_user,
-                    "id_seller" => $data_item['id_seller'],
-                    "id_item"   => $data_item['id'],
+                    "id_seller" => $data_item['id__seller'],
+                    "id_item"   => $data_item['id_item'],
                     "amount"    => $data['amount'],
                     "emoney"    => "PayPhone",
                     "status"    => 1
@@ -1249,7 +1249,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -1293,12 +1293,12 @@ class Buy extends BaseController
         
         $res_input = (array) json_decode(trim($res));
         if($res_input['status'] == "201"){
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
     
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "PayFresh",
                 "status"    => 1
@@ -1375,7 +1375,7 @@ class Buy extends BaseController
             return $this->fail("gk bisa gitu bang");
         }
 
-        $data_item = $this->item_m->getDataWhere('id', $data['id_item']);
+        $data_item = $this->item_m->getDataWhere('id_item', $data['id_item']);
         if ($data_item == "data tidak ada") {
             return $this->fail("item tersebut tidak ada");
         }
@@ -1427,12 +1427,12 @@ class Buy extends BaseController
             $resp = $this->callAPI("POST", "https://arielaliski.xyz/e-money-kelompok-2/public/buskidicoin/admin/transfer", $data_send,  "multipart/form-data", $token['message']->token);
             $input = (array) json_decode(trim($resp));
 
-            $this->item_m->updateData( "id", $data_item['id'], "stock", $data_item['stock'] - $data['amount']);
+            $this->item_m->updateData( "id_item", $data_item['id_item'], "stock", $data_item['stock'] - $data['amount']);
     
             $data_buy= [
                 "id_buyer"  => $data_jwt['data']->id_user,
-                "id_seller" => $data_item['id_seller'],
-                "id_item"   => $data_item['id'],
+                "id_seller" => $data_item['id__seller'],
+                "id_item"   => $data_item['id_item'],
                 "amount"    => $data['amount'],
                 "emoney"    => "PayFresh",
                 "status"    => 1
